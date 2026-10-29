@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="perfil.jpg">
+<link rel="apple-touch-icon" href="perfil.jpg">
+<link rel="canonical" href="https://heitorsette.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Heitor Sette">
+<meta property="og:title" content="Heitor Sette · Inovação, produto e tecnologia">
+<meta property="og:description" content="Portfólio de Heitor Sette: produto digital, inovação, educação e comunidades de tecnologia em Pernambuco. TOKKA, NASA Space Apps, GDG Recife e mais.">
+<meta property="og:url" content="https://heitorsette.pages.dev/">
+<meta property="og:image" content="https://heitorsette.pages.dev/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Heitor Sette sorrindo no OlinTech 2026, com a camisa do GDG Recife">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://heitorsette.pages.dev/og.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>Heitor Sette</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfólio de Heitor Sette: produto digital, inovação, educação e comunidades de tecnologia em Pernambuco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: página de produto em faixas alternadas (branco / cinza / preto), coluna de 980px, seções fixadas que respondem à rolagem. */
+:root{
+  --bg:#ffffff; --bg-alt:#f5f5f7; --card:#ffffff; --fg:#1d1d1f; --fg-2:#6e6e73; --fg-3:#a1a1a6; --line:#d2d2d7;
+  --accent:#0066cc; --accent-fill:#0071e3; --accent-fill-hover:#0077ed; --on-accent:#ffffff;
+  --glass:rgba(251,251,253,.78); --glass-line:rgba(0,0,0,.08); --scrim:rgba(0,0,0,.42);
+  --ink:#000000; --on-ink:#f5f5f7; --on-ink-2:#a1a1a6; --ink-card:#1d1d1f; --ink-line:#424245;
+  --ok:#1f7a35; --warn:#b25000; --info:#0066cc;
+  --frevo-1:#e8352e; --frevo-2:#ffb400; --frevo-3:#14a05a; --frevo-4:#1f6fe0;
+  --shadow:0 20px 50px -20px rgba(0,0,0,.25); --logo-tile:#ffffff; --logo-filter:none; --wa:#128c4a;
+  --chip-1:rgba(255,255,255,.82); --chip-2:rgba(255,255,255,.55); --chip-hi:rgba(255,255,255,.9); --chip-edge:rgba(0,0,0,.07); --chip-go:rgba(0,0,0,.06);
+  --font-display:-apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text:-apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono:ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --w:980px; --gut:max(22px, env(safe-area-inset-left, 0px)); --gut-r:max(22px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.28,.11,.32,1);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) #tokka{--tk-fade-mid:#01040f} :root:not([data-theme="light"]){
+  --bg:#000000; --bg-alt:#101011; --card:#1c1c1e; --fg:#f5f5f7; --fg-2:#a1a1a6; --fg-3:#6e6e73; --line:#38383a;
+  --accent:#2997ff; --accent-fill:#0071e3; --accent-fill-hover:#0077ed; --on-accent:#ffffff;
+  --glass:rgba(22,22,23,.78); --glass-line:rgba(255,255,255,.1); --scrim:rgba(0,0,0,.6);
+  --ink:#000000; --on-ink:#f5f5f7; --on-ink-2:#a1a1a6; --ink-card:#161617; --ink-line:#38383a;
+  --ok:#30d158; --warn:#ff9f0a; --info:#2997ff; --shadow:0 20px 50px -20px rgba(0,0,0,.8); --logo-tile:#f5f5f7; --logo-filter:grayscale(1) invert(1) brightness(1.05); --wa:#25d366;
+  --chip-1:rgba(58,58,62,.72); --chip-2:rgba(28,28,30,.55); --chip-hi:rgba(255,255,255,.18); --chip-edge:rgba(255,255,255,.1); --chip-go:rgba(255,255,255,.12);
+  color-scheme:dark }}
+:root[data-theme="dark"] #tokka{--tk-fade-mid:#01040f}
+:root[data-theme="dark"]{
+  --bg:#000000; --bg-alt:#101011; --card:#1c1c1e; --fg:#f5f5f7; --fg-2:#a1a1a6; --fg-3:#6e6e73; --line:#38383a;
+  --accent:#2997ff; --accent-fill:#0071e3; --accent-fill-hover:#0077ed; --on-accent:#ffffff;
+  --glass:rgba(22,22,23,.78); --glass-line:rgba(255,255,255,.1); --scrim:rgba(0,0,0,.6);
+  --ink:#000000; --on-ink:#f5f5f7; --on-ink-2:#a1a1a6; --ink-card:#161617; --ink-line:#38383a;
+  --ok:#30d158; --warn:#ff9f0a; --info:#2997ff; --shadow:0 20px 50px -20px rgba(0,0,0,.8); --logo-tile:#f5f5f7; --logo-filter:grayscale(1) invert(1) brightness(1.05); --wa:#25d366;
+  --chip-1:rgba(58,58,62,.72); --chip-2:rgba(28,28,30,.55); --chip-hi:rgba(255,255,255,.18); --chip-edge:rgba(255,255,255,.1); --chip-go:rgba(255,255,255,.12);
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{background:var(--bg); color:var(--fg); font-family:var(--font-text); font-size:17px; line-height:1.47; letter-spacing:-.022em; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:60; background:var(--glass)}
+img{max-width:100%; display:block}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+button{font:inherit; color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:6px}
+h1,h2,h3,h4{font-family:var(--font-display); margin:0; text-wrap:balance; letter-spacing:-.015em}
+p{margin:0}
+.wrap{max-width:calc(var(--w) + 44px); margin:0 auto; padding-left:var(--gut); padding-right:var(--gut-r)}
+.band{padding-block:clamp(80px,12vw,150px)}
+.band.alt{background:var(--bg-alt)}
+.band.ink{background:var(--ink); color:var(--on-ink)}
+.eyebrow{font-family:var(--font-display); font-weight:600; font-size:clamp(17px,1.6vw,21px); color:var(--fg-2); letter-spacing:.004em}
+.ink .eyebrow{color:var(--on-ink-2)}
+.headline{font-size:clamp(40px,6.4vw,80px); font-weight:700; line-height:1.05; letter-spacing:-.025em}
+.subhead{font-size:clamp(21px,2.4vw,28px); font-weight:600; line-height:1.2; color:var(--fg-2); max-width:34ch; letter-spacing:-.01em}
+.ink .subhead{color:var(--on-ink-2)}
+.lede{font-size:clamp(19px,1.8vw,21px); line-height:1.43; color:var(--fg-2); max-width:62ch}
+.lede strong{color:var(--fg); font-weight:600}
+.ink .lede{color:var(--on-ink-2)} .ink .lede strong{color:var(--on-ink)}
+.section-head{display:grid; gap:14px; margin-bottom:clamp(40px,6vw,72px)}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:6px; min-height:44px; padding:0 22px; border-radius:980px; background:var(--accent-fill); color:var(--on-accent); font-size:17px; font-weight:500; border:0; cursor:pointer; transition:background .2s}
+.btn:hover{background:var(--accent-fill-hover); text-decoration:none}
+.btn.ghost{background:transparent; color:var(--accent); border:1px solid var(--accent)}
+.link{display:inline-flex; align-items:center; gap:4px; min-height:44px; font-size:17px}
+.link::after{content:"›"; font-size:1.2em; line-height:1; transform:translateY(-1px)}
+.chev{width:12px; height:12px}
+
+/* ===== Navegação ===== */
+.localnav{position:sticky; top:env(safe-area-inset-top,0px); z-index:50; background:var(--glass); -webkit-backdrop-filter:saturate(180%) blur(20px); backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid var(--glass-line)}
+.localnav .bar{display:flex; align-items:center; gap:16px; height:52px}
+.brand{font-family:var(--font-display); font-size:21px; font-weight:600; color:var(--fg); letter-spacing:-.01em; margin-right:auto; white-space:nowrap}
+.brand:hover{text-decoration:none}
+.links{display:flex; gap:22px; list-style:none; margin:0; padding:0}
+.links a{font-size:12px; color:var(--fg); opacity:.85; display:inline-flex; align-items:center; min-height:44px}
+.links a:hover{opacity:1; text-decoration:none; color:var(--accent)}
+.links a[aria-current="true"]{opacity:1; color:var(--fg); font-weight:600}
+.nav-cta{min-height:28px; height:28px; padding:0 12px; font-size:12px; border-radius:980px}
+.nav-toggle{display:none; width:44px; height:44px; border:0; background:none; cursor:pointer; align-items:center; justify-content:center; color:var(--fg)}
+.nav-toggle svg{transition:transform .3s var(--ease)}
+@media (max-width:833px){
+  .nav-toggle{display:inline-flex}
+  .links{position:absolute; left:0; right:0; top:52px; flex-direction:column; gap:0; padding:8px var(--gut-r) 18px var(--gut); background:var(--glass); -webkit-backdrop-filter:saturate(180%) blur(20px); backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid var(--glass-line); visibility:hidden; opacity:0; transform:translateY(-8px); transition:opacity .25s, transform .25s var(--ease), visibility .25s}
+  .links a{font-size:17px; width:100%; border-bottom:1px solid var(--line)}
+  .localnav.open .links{visibility:visible; opacity:1; transform:none}
+  .localnav.open .nav-toggle svg{transform:rotate(180deg)}
+}
+
+/* ===== Hero ===== */
+.hero{padding-top:clamp(28px,4.5vw,56px); padding-bottom:clamp(40px,6vw,64px); text-align:center; overflow:hidden}
+.hero .eyebrow{color:var(--fg-2); margin-bottom:12px}
+.hero h1{font-size:clamp(64px,13vw,150px); font-weight:800; line-height:.95; letter-spacing:-.045em}
+.hero h1 .dot{background:conic-gradient(from 200deg, var(--frevo-1), var(--frevo-2), var(--frevo-3), var(--frevo-4), var(--frevo-1)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.hero .tagline{font-family:var(--font-display); font-size:clamp(24px,3.4vw,40px); font-weight:600; line-height:1.15; margin:18px auto 0; max-width:22ch; color:var(--fg); letter-spacing:-.02em}
+.hero .tagline span{color:var(--fg-2)}
+.hero .ctas{display:flex; gap:18px; justify-content:center; align-items:center; flex-wrap:wrap; margin-top:30px}
+.hero-stage{position:relative; margin:clamp(24px,3.5vw,40px) auto 0; max-width:880px}
+.halo{position:absolute; inset:8% 6%; border-radius:50%; background:conic-gradient(var(--frevo-1), var(--frevo-2), var(--frevo-3), var(--frevo-4), var(--frevo-1)); filter:blur(70px); opacity:.45; animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(1turn)}}
+.hero-photo{position:relative; border-radius:clamp(24px,3vw,40px); overflow:hidden; transform:scale(var(--s,1)); transform-origin:50% 0; box-shadow:var(--shadow); aspect-ratio:3/2; max-width:100%; background:var(--ink-card)}
+.hero-photo img{width:100%; height:100%; object-fit:cover; object-position:50% 40%}
+/* Selos flutuantes: vidro líquido, entrada em sequência, flutuação e paralaxe por profundidade */
+.chip{position:absolute; z-index:2; text-decoration:none; color:var(--fg); --mx:0; --my:0; --sp:0;
+  transform:translate3d(calc(var(--mx) * var(--depth) * 1px), calc(var(--my) * var(--depth) * 1px + var(--sp) * var(--depth) * -.005px), 0);
+  transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.chip:hover{text-decoration:none}
+.chip-in{display:flex; align-items:center; gap:12px; padding:10px 14px 10px 10px; border-radius:22px; position:relative; overflow:hidden; isolation:isolate;
+  background:linear-gradient(140deg, var(--chip-1), var(--chip-2));
+  -webkit-backdrop-filter:saturate(190%) blur(24px); backdrop-filter:saturate(190%) blur(24px);
+  box-shadow:inset 0 1px 0 var(--chip-hi), inset 0 0 0 1px var(--chip-edge), 0 1px 2px rgba(0,0,0,.08), 0 18px 40px -14px rgba(0,0,0,.45);
+  font-size:15px; font-weight:600; line-height:1.2; letter-spacing:-.01em; text-align:left; white-space:nowrap;
+  animation:chipIn .9s cubic-bezier(.2,.9,.25,1.2) both, bob var(--dur) ease-in-out infinite; animation-delay:var(--in), calc(var(--in) + .9s);
+  transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s}
+.chip-in::after{content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(110deg, transparent 35%, rgba(255,255,255,.45) 50%, transparent 65%); transform:translateX(-120%); animation:sheen 7s ease-in-out infinite; animation-delay:calc(var(--in) + 1.6s)}
+.chip:hover .chip-in, .chip:focus-visible .chip-in{transform:scale(1.06); box-shadow:inset 0 1px 0 var(--chip-hi), inset 0 0 0 1px var(--chip-edge), 0 2px 4px rgba(0,0,0,.08), 0 26px 50px -16px rgba(0,0,0,.55)}
+.chip small{display:block; font-weight:500; color:var(--fg-2); font-size:12px; margin-top:2px; letter-spacing:0}
+.chip .ico{width:44px; height:44px; border-radius:13px; display:grid; place-items:center; flex:none; background:#fff; padding:6px; box-shadow:0 1px 3px rgba(0,0,0,.12), inset 0 0 0 1px rgba(0,0,0,.05)}
+.chip .ico img{width:100%; height:100%; object-fit:contain}
+.chip .go{width:24px; height:24px; border-radius:50%; display:grid; place-items:center; flex:none; background:var(--chip-go); color:var(--fg); margin-left:2px; transition:transform .35s cubic-bezier(.2,.8,.2,1), background .35s}
+.chip .go svg{width:10px; height:10px}
+.chip:hover .go{transform:translateX(3px); background:var(--accent-fill); color:#fff}
+.chip.c1{left:-6%; top:12%; --depth:28; --dur:6.5s; --in:.35s; --tilt:-2deg}
+.chip.c2{right:-6%; top:44%; --depth:18; --dur:7.5s; --in:.55s; --tilt:2deg}
+.chip.c3{left:5%; bottom:-26px; --depth:36; --dur:5.8s; --in:.75s; --tilt:-1.5deg}
+@keyframes chipIn{from{opacity:0; transform:translateY(24px) scale(.86)}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-12px) rotate(var(--tilt))}}
+@keyframes sheen{0%,62%{transform:translateX(-120%)} 82%,100%{transform:translateX(120%)}}
+@media (max-width:1000px) and (min-width:834px){ .chip.c1{left:10px} .chip.c2{right:10px} }
+@media (max-width:833px){ .hero-stage{max-width:620px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px} .hero-photo{flex:0 0 100%; margin-bottom:8px} .chip{position:relative; left:auto !important; right:auto !important; top:auto !important; bottom:auto !important; transform:none} .chip.c1{order:2} .chip.c2{order:3} .chip.c3{order:4} .chip-in{font-size:13px; padding:8px 10px 8px 8px; gap:10px; border-radius:18px} .chip .ico{width:34px; height:34px; padding:5px; border-radius:10px} .chip .go{display:none} .hero-photo{aspect-ratio:3/2} }
+@media (prefers-reduced-motion: reduce){ .chip{transform:none} }
+
+/* ===== Destaques (carrossel) ===== */
+.hl{padding-block:clamp(70px,10vw,120px) clamp(40px,6vw,60px)}
+.hl-track{display:flex; gap:20px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; position:relative; padding-left:max(var(--gut), calc((100vw - var(--w)) / 2)); padding-right:max(var(--gut-r), calc((100vw - var(--w)) / 2)); scroll-padding-left:max(var(--gut), calc((100vw - var(--w)) / 2))}
+.hl-track::-webkit-scrollbar{display:none}
+.hl-card{flex:none; width:min(880px, 84vw); aspect-ratio:16/10; border-radius:28px; overflow:hidden; position:relative; scroll-snap-align:start; background:var(--ink-card); color:#fff}
+.hl-card img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 1.2s var(--ease)}
+.hl-card.active img{transform:scale(1.04)}
+.hl-card::after{content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.82) 0%, rgba(0,0,0,.35) 38%, rgba(0,0,0,0) 62%)}
+.hl-copy{position:absolute; left:0; right:0; bottom:0; z-index:1; padding:clamp(22px,3.4vw,44px); display:grid; gap:8px; max-width:640px}
+.hl-copy .tag{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:#d2d2d7}
+.hl-copy h3{font-size:clamp(24px,3.2vw,40px); font-weight:700; line-height:1.1; color:#fff}
+.hl-copy p{color:#e8e8ed; font-size:clamp(15px,1.4vw,17px); max-width:52ch}
+@media (max-width:600px){ .hl-card{aspect-ratio:3/4; width:86vw} }
+.hl-controls{display:flex; justify-content:center; align-items:center; gap:14px; margin-top:28px; flex-wrap:wrap}
+.hl-track{cursor:grab; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch}
+.hl-track.dragging{cursor:grabbing; scroll-snap-type:none; scroll-behavior:auto}
+.hl-track.dragging .hl-card{pointer-events:none}
+.hl-card img{-webkit-user-drag:none; user-select:none}
+.round:disabled{opacity:.35; cursor:default}
+.hl-wrap{position:relative}
+.paddle{position:absolute; top:50%; translate:0 -50%; z-index:3; width:52px; height:52px; border-radius:50%; border:0; cursor:pointer; display:grid; place-items:center; color:#1d1d1f; background:rgba(245,245,247,.82); -webkit-backdrop-filter:saturate(180%) blur(20px); backdrop-filter:saturate(180%) blur(20px); box-shadow:0 8px 24px -8px rgba(0,0,0,.4); opacity:0; transition:opacity .3s, transform .3s cubic-bezier(.2,.8,.2,1)}
+.paddle svg{width:18px; height:18px}
+.paddle.prev{left:max(12px, calc((100vw - var(--w)) / 2 - 70px))}
+.paddle.next{right:max(12px, calc((100vw - var(--w)) / 2 - 70px))}
+.hl-wrap:hover .paddle, .paddle:focus-visible{opacity:1}
+.paddle:hover{transform:scale(1.08)}
+.paddle[disabled]{opacity:0 !important; pointer-events:none}
+@media (hover:none){ .paddle{display:none} }
+.dots{display:flex; gap:10px; align-items:center; padding:0 18px; height:56px; border-radius:980px; background:var(--bg-alt)}
+.dot{width:8px; height:8px; border-radius:980px; border:0; padding:0; background:var(--fg-3); cursor:pointer; position:relative; overflow:hidden; transition:width .4s var(--ease)}
+.dot::before{content:""; position:absolute; inset:-18px -4px}
+.dot.on{width:48px; background:var(--line)}
+.dot span{position:absolute; inset:0 auto 0 0; width:0; background:var(--fg); border-radius:inherit}
+.dot.on span{width:var(--prog,0%)}
+.round{width:56px; height:56px; border-radius:50%; border:0; background:var(--bg-alt); color:var(--fg); display:grid; place-items:center; cursor:pointer; transition:background .2s}
+.round:hover{background:var(--line)}
+.round svg{width:16px; height:16px}
+
+/* ===== Manifesto (palavras acendem) ===== */
+.manifesto{position:relative; height:240vh; background:var(--bg)}
+.manifesto .pin{position:sticky; top:0; height:100vh; display:flex; align-items:center}
+.words{font-family:var(--font-display); font-size:clamp(30px,4.8vw,64px); font-weight:700; line-height:1.12; letter-spacing:-.03em; max-width:20ch}
+.words span{color:var(--fg-3); transition:color .35s}
+.words span.lit{color:var(--fg)}
+.words span.hi.lit{background:linear-gradient(90deg, var(--frevo-1), var(--frevo-2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.attrib{margin-top:28px; font-size:17px; color:var(--fg-2)}
+
+/* ===== Números ===== */
+.stats{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(20px,3vw,40px); border-top:1px solid var(--line); padding-top:40px}
+.stat .num{font-family:var(--font-display); font-size:clamp(48px,6vw,80px); font-weight:700; letter-spacing:-.04em; line-height:1; font-variant-numeric:tabular-nums; background:linear-gradient(180deg, var(--fg) 40%, var(--fg-2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.stat p{margin-top:10px; color:var(--fg-2); font-size:15px; max-width:22ch}
+@media (max-width:833px){ .stats{grid-template-columns:repeat(2,1fr); row-gap:44px} }
+
+/* ===== Florescer (expansão) ===== */
+.expand{position:relative; background:var(--bg); padding-block:clamp(12px,2vw,24px)}
+.expand .pin{position:relative; display:flex; align-items:center; justify-content:center}
+.expand .expand-media{height:auto !important; min-height:clamp(540px,58vw,800px); padding-block:clamp(56px,7vw,96px)}
+.expand-media{--p:0; width:calc(100% - (1 - var(--p)) * 18%); height:calc(100% - (1 - var(--p)) * 30%); border-radius:calc((1 - var(--p)) * 36px); background:radial-gradient(120% 90% at 50% 110%, #12351f 0%, #050806 55%, #000 100%); color:#f5f5f7; position:relative; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:clamp(18px,3vh,32px); padding:24px}
+.expand-copy{text-align:center; display:grid; gap:10px; opacity:calc(.35 + var(--p) * .65)}
+.expand-copy .tag{font-size:14px; font-weight:600; color:#a1a1a6; letter-spacing:.02em}
+.expand-copy h2{font-size:clamp(44px,7vw,96px); font-weight:800; letter-spacing:-.04em; line-height:1}
+.expand-copy p{color:#c7c7cc; font-size:clamp(17px,1.6vw,21px); max-width:40ch; margin:0 auto}
+.screen{width:min(640px, 88%); border-radius:16px; background:#111; border:1px solid #2c2c2e; padding:14px; box-shadow:0 30px 80px -30px rgba(20,160,90,.5)}
+.screen-top{display:flex; align-items:center; gap:6px; margin-bottom:12px; font-size:12px; color:#8e8e93}
+.screen-top i{width:10px; height:10px; border-radius:50%; background:#3a3a3c}
+.screen-top b{margin-left:8px; color:#f5f5f7; font-weight:600}
+.sdg{display:grid; grid-template-columns:repeat(6,1fr); gap:6px}
+.sdg img{width:100%; aspect-ratio:1; display:block; border-radius:4px; --t:clamp(0, calc(var(--p) * 1.7 - var(--k) * .04), 1); transform:scale(calc(.55 + var(--t) * .45)) translateY(calc((1 - var(--t)) * 14px)); opacity:calc(.15 + var(--t) * .85)}
+@media (max-width:600px){ .sdg{gap:4px} .sdg img{border-radius:3px} }
+.florescer-facts{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:clamp(40px,6vw,64px)}
+.fact{background:var(--card); border-radius:24px; padding:28px; display:grid; gap:8px; align-content:start}
+.band:not(.alt) .fact{background:var(--bg-alt)}
+.fact .big{font-family:var(--font-display); font-size:40px; font-weight:800; letter-spacing:-.03em; line-height:1}
+.fact h4{font-size:19px; font-weight:600}
+.fact p{color:var(--fg-2); font-size:15px}
+@media (max-width:833px){ .florescer-facts{grid-template-columns:1fr} }
+
+/* ===== Projetos ===== */
+.bento{display:grid; grid-template-columns:repeat(6,1fr); gap:20px}
+.tile{grid-column:span 3; background:var(--card); border-radius:28px; overflow:hidden; position:relative; display:flex; flex-direction:column; min-height:540px; min-width:0}
+.tile.wide{grid-column:span 6; flex-direction:row; min-height:480px}
+.tile.third{grid-column:span 2; min-height:500px}
+.tile .tcopy{padding:clamp(26px,3vw,40px) clamp(26px,3vw,40px) 0; display:grid; gap:8px; position:relative; z-index:1}
+.tile.wide .tcopy{flex:1; padding-bottom:40px; align-content:center}
+.tile .cat{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--fg-2)}
+.tile h3{font-size:clamp(28px,3vw,40px); font-weight:700; line-height:1.05}
+.tile.third h3{font-size:clamp(24px,2.4vw,30px)}
+.tile .tcopy p{color:var(--fg-2); font-size:16px; max-width:44ch}
+.stage{display:inline-flex; align-items:center; gap:6px; width:max-content; font-size:12px; font-weight:600; padding:4px 10px; border-radius:980px; border:1px solid currentColor}
+.stage.won{color:var(--ok)} .stage.dev{color:var(--info)} .stage.proto{color:var(--warn)} .stage.hack{color:var(--fg-2)}
+.stage::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor}
+.tvis{flex:1; display:flex; align-items:center; justify-content:center; padding:28px; min-height:260px; position:relative}
+.tile.wide .tvis{flex:1}
+.plus{position:absolute; right:18px; bottom:18px; z-index:2; width:44px; height:44px; border-radius:50%; border:0; background:var(--fg); color:var(--bg); display:grid; place-items:center; cursor:pointer; transition:transform .25s var(--ease)}
+.plus:hover{transform:scale(1.08)}
+.plus svg{width:16px; height:16px}
+@media (max-width:833px){ .tile,.tile.third{grid-column:span 6; min-height:0} .tile.wide{flex-direction:column} }
+.example{position:absolute; top:14px; right:16px; font-size:11px; color:var(--fg-3); letter-spacing:.02em}
+/* visuais */
+.phone{width:240px; aspect-ratio:9/19; border-radius:42px; background:var(--ink); padding:10px; box-shadow:var(--shadow), inset 0 0 0 2px #3a3a3c}
+.phone .scr{height:100%; border-radius:33px; background:linear-gradient(180deg,#0b3d2e,#0a1f2e 70%); color:#fff; padding:44px 16px 16px; position:relative; display:flex; flex-direction:column; gap:10px; font-size:12px}
+.phone .island{position:absolute; top:10px; left:50%; translate:-50% 0; width:76px; height:22px; border-radius:20px; background:#000}
+.phone .lbl{color:#a7f3d0; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.06em}
+.phone .bal{font-family:var(--font-display); font-size:34px; font-weight:800; letter-spacing:-.03em; line-height:1}
+.phone .bal span{font-size:13px; font-weight:600; color:#a7f3d0; letter-spacing:0}
+.phone ul{list-style:none; margin:6px 0 0; padding:0; display:grid; gap:6px}
+.phone li{display:flex; align-items:center; gap:8px; background:rgba(255,255,255,.08); border-radius:12px; padding:9px 10px}
+.phone li i{width:22px; height:22px; border-radius:7px; background:var(--c); flex:none}
+.phone li b{margin-left:auto; color:#86efac}
+.phone .pbtn{margin-top:auto; text-align:center; background:#34c759; color:#05210f; font-weight:700; border-radius:12px; padding:11px}
+.nfc{width:min(340px,100%); aspect-ratio:1.586; border-radius:20px; background:linear-gradient(135deg,#1c1c1e 0%,#3a3a3c 45%,#111 100%); color:#f5f5f7; padding:22px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 30px 60px -25px rgba(0,0,0,.6); transform:perspective(900px) rotateX(var(--rx,8deg)) rotateY(var(--ry,-14deg)); transition:transform .3s var(--ease); position:relative; overflow:hidden}
+.nfc::after{content:""; position:absolute; inset:0; background:linear-gradient(115deg, transparent 30%, rgba(255,255,255,.18) 48%, transparent 62%); transform:translateX(var(--sx,-30%))}
+.nfc .row{display:flex; justify-content:space-between; align-items:center}
+.nfc .wm{font-family:var(--font-display); font-weight:800; letter-spacing:.18em; font-size:18px}
+.nfc svg{width:26px; height:26px}
+.nfc .nm{font-family:var(--font-display); font-weight:600; font-size:18px}
+.nfc .nm small{display:block; font-family:var(--font-text); font-size:11px; color:#a1a1a6; font-weight:400}
+.menu{width:min(360px,100%); background:var(--bg); border-radius:20px; padding:8px 16px; box-shadow:var(--shadow)}
+.band.alt .menu{background:var(--bg)}
+.menu-row{display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); transition:opacity .25s}
+.menu-row:last-child{border-bottom:0}
+.menu-row.off{opacity:.45}
+.menu-row .mn{flex:1; min-width:0; font-weight:600; font-size:15px}
+.menu-row .mn small{display:block; font-weight:400; color:var(--fg-2); font-size:13px; font-variant-numeric:tabular-nums}
+.switch{width:51px; height:31px; border-radius:16px; border:0; padding:2px; background:var(--line); cursor:pointer; position:relative; transition:background .25s; flex:none}
+.switch::after{content:""; position:absolute; top:2px; left:2px; width:27px; height:27px; border-radius:50%; background:#fff; box-shadow:0 3px 8px rgba(0,0,0,.15); transition:transform .25s var(--ease)}
+.switch[aria-checked="true"]{background:#34c759}
+.switch[aria-checked="true"]::after{transform:translateX(20px)}
+.switch::before{content:""; position:absolute; inset:-7px -2px}
+.invoice{width:min(360px,100%); background:#fffdf8; color:#1d1d1f; border-radius:10px; padding:22px; box-shadow:var(--shadow); position:relative; overflow:hidden; font-size:13px}
+.invoice h5{margin:0 0 12px; font-size:15px; font-family:var(--font-display)}
+.invoice .ln{display:flex; justify-content:space-between; gap:10px; padding:7px 0; border-bottom:1px dashed #d2d2d7; font-variant-numeric:tabular-nums}
+.invoice .ln span{color:#6e6e73}
+.invoice .flag{margin-top:12px; display:flex; gap:8px; align-items:center; background:#fff4e5; color:#8a3b00; border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px}
+.invoice .scan{position:absolute; left:0; right:0; height:40px; top:-40px; background:linear-gradient(180deg, rgba(0,113,227,0), rgba(0,113,227,.22), rgba(0,113,227,0)); border-bottom:2px solid #0071e3; animation:scan 3.2s var(--ease) infinite}
+@keyframes scan{to{top:100%}}
+.triage{width:min(320px,100%); display:grid; gap:10px}
+.bubble{padding:12px 16px; border-radius:20px; font-size:14px; max-width:86%; line-height:1.35}
+.bubble.me{background:var(--accent-fill); color:#fff; justify-self:end; border-bottom-right-radius:6px}
+.bubble.bot{background:var(--bg); color:var(--fg); border-bottom-left-radius:6px; box-shadow:0 1px 0 var(--line)}
+.band.alt .bubble.bot{background:var(--bg)}
+.opts{display:flex; gap:8px; flex-wrap:wrap}
+.opts span{border:1px solid var(--accent); color:var(--accent); border-radius:980px; padding:6px 14px; font-size:13px; font-weight:600}
+.qr{width:150px; height:150px; background:#fff; padding:10px; border-radius:16px; box-shadow:var(--shadow)}
+.qr svg{width:100%; height:100%}
+.ready{margin-top:14px; text-align:center; font-size:14px; font-weight:600}
+.ready small{display:block; color:var(--fg-2); font-weight:400}
+.spark{width:100%; max-width:260px; background:var(--bg); border-radius:18px; padding:16px; box-shadow:var(--shadow)}
+.spark .t{font-size:12px; color:var(--fg-2); font-weight:600}
+.spark .v{font-family:var(--font-display); font-size:28px; font-weight:700; font-variant-numeric:tabular-nums}
+.spark svg{width:100%; height:70px; display:block; margin-top:6px}
+.study{list-style:none; margin:0; padding:0; width:100%; display:grid}
+.study li{display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); font-size:15px}
+.study li span{color:var(--fg-2); text-align:right}
+
+/* ===== Caso PO ===== */
+.case{display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(32px,5vw,72px); align-items:center}
+.collage{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.collage img{border-radius:22px; width:100%; height:100%; object-fit:cover}
+.collage .tall{grid-row:span 2}
+.checks{list-style:none; margin:24px 0 0; padding:0; display:grid; gap:14px}
+.checks li{display:grid; grid-template-columns:24px 1fr; gap:12px; color:var(--fg-2); font-size:17px}
+.checks li strong{color:var(--fg); font-weight:600}
+.checks svg{width:22px; height:22px; color:var(--ok); margin-top:2px}
+@media (max-width:833px){ .case{grid-template-columns:1fr} }
+
+/* ===== Segmented control (HIG) ===== */
+.seg{display:inline-flex; padding:3px; border-radius:11px; background:var(--bg-alt); gap:2px; max-width:100%; overflow-x:auto; scrollbar-width:none}
+.band.alt .seg{background:var(--line)}
+.ink .seg{background:#1d1d1f}
+.seg::-webkit-scrollbar{display:none}
+.seg button{border:0; background:transparent; min-height:36px; padding:0 16px; border-radius:9px; font-size:14px; font-weight:500; cursor:pointer; white-space:nowrap; color:var(--fg-2); transition:background .25s, color .25s}
+.ink .seg button{color:var(--on-ink-2)}
+.seg button[aria-selected="true"]{background:var(--card); color:var(--fg); box-shadow:0 3px 8px rgba(0,0,0,.12), 0 0 0 .5px rgba(0,0,0,.04)}
+.band.alt .seg button[aria-selected="true"]{background:var(--bg)}
+.ink .seg button[aria-selected="true"]{background:#636366; color:#fff}
+
+/* ===== Galeria ===== */
+.gallery-top{display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:32px}
+.masonry{columns:3 240px; column-gap:14px}
+.ph{break-inside:avoid; margin:0 0 14px; display:block; width:100%; border:0; padding:0; background:var(--ink-card); border-radius:18px; overflow:hidden; cursor:zoom-in; position:relative}
+.ph img{width:100%; height:auto; transition:transform .6s var(--ease), opacity .3s}
+.ph:hover img{transform:scale(1.035)}
+.ph .cap{position:absolute; left:0; right:0; bottom:0; padding:28px 14px 12px; background:linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,0)); color:#fff; font-size:13px; font-weight:600; text-align:left; opacity:0; transition:opacity .3s}
+.ph:hover .cap, .ph:focus-visible .cap{opacity:1}
+.ph[hidden]{display:none}
+.gcount{color:var(--on-ink-2); font-size:14px}
+dialog{border:0; padding:0; max-width:none; max-height:none; background:transparent; color:inherit}
+dialog::backdrop{background:var(--scrim); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px)}
+.lb{width:min(1100px, calc(100vw - 32px)); max-height:calc(100vh - 32px)}
+.lb-inner{background:var(--ink-card); color:var(--on-ink); border-radius:24px; overflow:hidden; display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); max-height:calc(100vh - 32px)}
+.lb-img{background:#000; display:flex; align-items:center; justify-content:center; min-height:0}
+.lb-img img{max-height:calc(100vh - 32px); width:100%; object-fit:contain}
+.lb-side{padding:32px 28px 24px; display:flex; flex-direction:column; gap:12px; overflow:auto; min-width:0}
+.lb-side .tag{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--on-ink-2)}
+.lb-side h3{font-size:26px; font-weight:700; line-height:1.15}
+.lb-side .date{font-size:14px; color:var(--on-ink-2)}
+.lb-side p{font-size:15px; color:#d1d1d6; line-height:1.5}
+.lb-nav{margin-top:auto; display:flex; align-items:center; gap:10px; padding-top:16px}
+.lb-nav .round{background:#2c2c2e; color:#f5f5f7; width:44px; height:44px}
+.lb-nav .round:hover{background:#3a3a3c}
+.lb-count{font-size:13px; color:var(--on-ink-2); font-variant-numeric:tabular-nums; margin-right:auto}
+.close{position:absolute; top:12px; right:12px; z-index:3; width:44px; height:44px; border-radius:50%; border:0; background:rgba(60,60,67,.75); color:#fff; display:grid; place-items:center; cursor:pointer; -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px)}
+.close svg{width:14px; height:14px}
+@media (max-width:833px){ .lb-inner{grid-template-columns:1fr; overflow:auto} .lb-img img{max-height:58vh} }
+
+/* ===== Sheet de projeto ===== */
+.sheet{width:min(780px, calc(100vw - 32px)); max-height:calc(100vh - 48px)}
+.sheet-inner{background:var(--card); color:var(--fg); border-radius:28px; padding:clamp(28px,5vw,56px); overflow:auto; max-height:calc(100vh - 48px); position:relative}
+.sheet .close{background:var(--bg-alt); color:var(--fg)}
+.sheet h3{font-size:clamp(32px,4vw,48px); font-weight:700; margin:10px 0 6px}
+.sheet .intro{font-size:19px; color:var(--fg-2); margin-bottom:28px}
+.sheet dl{display:grid; gap:22px; margin:0}
+.sheet dt{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--fg-2); margin-bottom:6px}
+.sheet dd{margin:0; font-size:17px}
+dialog[open]{animation:pop .45s var(--ease)}
+@keyframes pop{from{opacity:0; transform:translateY(24px) scale(.98)}}
+@media (max-width:600px){ .sheet{width:100vw; max-height:92vh; margin:auto 0 0} .sheet-inner{border-radius:28px 28px 0 0; max-height:92vh; padding-top:40px} .sheet-inner::before{content:""; position:absolute; top:8px; left:50%; translate:-50% 0; width:36px; height:5px; border-radius:3px; background:var(--line)} }
+
+/* ===== Prêmios ===== */
+.awards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.award{background:var(--card); border-radius:24px; padding:30px 28px; display:grid; gap:10px; align-content:start; position:relative; overflow:hidden; min-width:0}
+.award.feature{grid-column:span 2; background:var(--ink); color:var(--on-ink); grid-row:span 2; padding:0; display:flex; flex-direction:column}
+.award.feature img{width:100%; aspect-ratio:16/9; object-fit:cover}
+.award.feature .ac{padding:30px; display:grid; gap:10px}
+.place{font-family:var(--font-display); font-size:64px; font-weight:800; letter-spacing:-.05em; line-height:.9}
+.place sup{font-size:.42em; vertical-align:top; position:relative; top:.25em; margin-left:2px}
+.p1{background:linear-gradient(135deg,#d4a017,#f5d36b 55%,#b8860b); -webkit-background-clip:text; background-clip:text; color:transparent}
+.p2{background:linear-gradient(135deg,#8e8e93,#d1d1d6 55%,#636366); -webkit-background-clip:text; background-clip:text; color:transparent}
+.p3{background:linear-gradient(135deg,#a0522d,#e0a070 55%,#8b4513); -webkit-background-clip:text; background-clip:text; color:transparent}
+.award h4{font-size:19px; font-weight:600; line-height:1.25}
+.award p{color:var(--fg-2); font-size:15px}
+.award.feature p{color:var(--on-ink-2)}
+.award .src{font-size:14px; margin-top:4px; min-height:auto}
+.award.feature .src{color:#2997ff}
+@media (max-width:833px){ .awards{grid-template-columns:1fr} .award.feature{grid-column:auto; grid-row:auto} }
+
+/* ===== Trajetória ===== */
+.tl-panels{margin-top:36px}
+.tl-panel{display:grid; grid-template-columns:200px 1fr; gap:40px; animation:fade .5s var(--ease)}
+@keyframes fade{from{opacity:0; transform:translateY(12px)}}
+.tl-year{font-family:var(--font-display); font-size:clamp(64px,8vw,104px); font-weight:800; letter-spacing:-.05em; line-height:.9; color:var(--fg)}
+.tl-year small{display:block; font-size:17px; letter-spacing:-.01em; font-weight:600; color:var(--fg-2); margin-top:12px}
+.tl-list{list-style:none; margin:0; padding:0; display:grid}
+.tl-list li{display:grid; grid-template-columns:110px 1fr; gap:16px; padding:18px 0; border-bottom:1px solid var(--line)}
+.tl-list li:first-child{padding-top:0}
+.tl-list .k{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--fg-2); padding-top:3px}
+.tl-list strong{display:block; font-weight:600}
+.tl-list span{color:var(--fg-2); font-size:15px}
+@media (max-width:833px){ .tl-panel{grid-template-columns:1fr; gap:20px} .tl-list li{grid-template-columns:1fr; gap:4px} }
+.roles{display:grid; margin-top:clamp(56px,8vw,96px); border-top:1px solid var(--line)}
+.role{display:grid; grid-template-columns:1.2fr 1fr auto; gap:20px; padding:22px 0; border-bottom:1px solid var(--line); align-items:baseline}
+.role h4{font-size:21px; font-weight:600}
+.role .org{color:var(--fg-2)}
+.role .when{color:var(--fg-2); font-size:15px; font-variant-numeric:tabular-nums; white-space:nowrap}
+@media (max-width:833px){ .role{grid-template-columns:1fr; gap:2px} }
+
+/* ===== Competências ===== */
+.skills{display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:20px}
+.skill{background:var(--card); border-radius:22px; padding:26px; min-width:0}
+.skill h4{font-size:19px; font-weight:600; margin-bottom:8px}
+.skill p{font-size:15px; color:var(--fg-2)}
+.marquee{overflow:hidden; margin-top:56px; -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent); mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee .row{display:flex; gap:12px; width:max-content; animation:marq 40s linear infinite}
+.marquee:hover .row{animation-play-state:paused}
+.marquee span{padding:10px 18px; border-radius:980px; background:var(--card); font-size:15px; font-weight:500; white-space:nowrap}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ===== Comunidade (palcos) ===== */
+.talks{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.talk{background:var(--ink-card); border-radius:24px; overflow:hidden; display:flex; flex-direction:column; border:1px solid var(--ink-line); min-width:0}
+.talk img{width:100%; aspect-ratio:4/3; object-fit:cover}
+.talk .tc{padding:22px 24px 26px; display:grid; gap:6px}
+.talk .when{font-size:13px; color:var(--on-ink-2); font-weight:600}
+.talk h4{font-size:20px; font-weight:600; line-height:1.25; color:var(--on-ink)}
+.talk p{font-size:15px; color:var(--on-ink-2)}
+.talk.noimg{justify-content:flex-end; background:linear-gradient(160deg, #1d1d1f, #000)}
+@media (max-width:833px){ .talks{grid-template-columns:1fr} }
+
+/* ===== Contato / rodapé ===== */
+.contact{text-align:center}
+.contact h2{font-size:clamp(48px,8vw,104px); font-weight:800; letter-spacing:-.045em; line-height:.98}
+.contact .lede{margin:22px auto 0; text-align:center}
+.contact .ctas{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:34px}
+.avatar{width:96px; height:96px; border-radius:50%; object-fit:cover; margin:0 auto 26px; box-shadow:0 0 0 4px var(--bg), 0 0 0 6px var(--line)}
+footer{background:var(--bg-alt); color:var(--fg-2); font-size:12px; line-height:1.4; padding-block:28px 40px}
+footer .sources{border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:16px; display:grid; gap:8px}
+footer .sources ol{margin:0; padding-left:18px; display:grid; gap:4px}
+footer a{color:var(--fg-2); text-decoration:underline}
+footer .bottom{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+
+/* ===== Novos blocos ===== */
+.hl-copy a{color:#fff; text-decoration:underline; text-underline-offset:3px; font-size:14px; font-weight:600; width:max-content; min-height:32px; display:inline-flex; align-items:center}
+.strip{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:14px; margin-top:clamp(40px,6vw,64px)}
+.strip figure{margin:0; border-radius:22px; overflow:hidden; position:relative; background:var(--ink-card); min-width:0}
+.strip img{width:100%; height:100%; object-fit:cover; aspect-ratio:4/5}
+.strip figure:first-child img{aspect-ratio:auto}
+.strip figcaption{position:absolute; left:0; right:0; bottom:0; padding:30px 16px 14px; background:linear-gradient(to top, rgba(0,0,0,.78), rgba(0,0,0,0)); color:#fff; font-size:13px; font-weight:600}
+@media (max-width:833px){ .strip{grid-template-columns:1fr 1fr} .strip figure:first-child{grid-column:span 2} .strip figure:first-child img{aspect-ratio:4/3} }
+.tokka-photo{width:min(340px,100%); border-radius:24px; box-shadow:0 30px 60px -25px rgba(0,0,0,.55); transform:perspective(900px) rotateX(var(--rx,4deg)) rotateY(var(--ry,-8deg)); transition:transform .3s var(--ease)}
+.srclink{display:inline-flex; align-items:center; gap:4px; font-size:14px; font-weight:500; min-height:36px; color:var(--accent)}
+.srclink::after{content:"↗"; font-size:.9em}
+.ink .srclink{color:#2997ff}
+.self{font-size:13px; color:var(--fg-3)}
+.awards-top{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:20px}
+.award.photo{padding:0; display:flex; flex-direction:column}
+.award.photo img{width:100%; aspect-ratio:4/3; object-fit:cover}
+.award.photo .ac{padding:26px 26px 22px; display:grid; gap:8px}
+.awards-rest{display:grid; grid-template-columns:repeat(4,1fr); gap:20px}
+@media (max-width:1000px){ .awards-rest{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:833px){ .awards-top{grid-template-columns:1fr} }
+@media (max-width:520px){ .awards-rest{grid-template-columns:1fr} }
+.badges{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:clamp(28px,4vw,56px); align-items:start}
+.badges figure{margin:0; border-radius:28px; overflow:hidden; box-shadow:var(--shadow); position:sticky; top:84px}
+.badges figure img{width:100%}
+.badge-groups{display:grid; gap:28px}
+.badge-groups h4{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--fg-2); margin-bottom:10px}
+.badge-groups ul{list-style:none; margin:0; padding:0; display:grid}
+.badge-groups li{display:flex; justify-content:space-between; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); font-size:16px}
+.badge-groups li span{color:var(--fg-2); font-size:14px; text-align:right}
+@media (max-width:833px){ .badges{grid-template-columns:1fr} .badges figure{position:static} }
+.sources-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px}
+.src-card{display:grid; gap:6px; align-content:start; padding:22px 24px; border-radius:20px; background:var(--card); color:var(--fg); min-width:0; transition:transform .25s var(--ease), box-shadow .25s}
+.src-card:hover{text-decoration:none; transform:translateY(-3px); box-shadow:var(--shadow)}
+.src-card .pub{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.07em; color:var(--fg-2)}
+.src-card strong{font-size:17px; font-weight:600; line-height:1.3}
+.src-card .go{font-size:14px; color:var(--accent)}
+.src-sub{margin:44px 0 16px; font-size:21px; font-weight:600}
+.lb-link{color:#2997ff; font-size:14px; font-weight:600}
+.talk .srclink{margin-top:4px}
+
+/* ===== Celular com tela real ===== */
+.device{width:min(250px,70%); border-radius:44px; background:#0b0b0c; padding:9px; box-shadow:inset 0 0 0 2px #3a3a3c, 0 40px 70px -30px rgba(0,0,0,.55); transform:perspective(1000px) rotateY(var(--ry,-10deg)) rotateX(var(--rx,4deg)); transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.device-scr{border-radius:35px; overflow:hidden; aspect-ratio:738/1329; background:#fff; position:relative; container-type:size}
+.device-scr img{width:100%; height:100%; display:block; object-fit:cover; object-position:top}
+@keyframes scrollShot{0%,18%{transform:translateY(0)} 82%,100%{transform:translateY(calc(-100% + 100cqh))}}
+@media (prefers-reduced-motion: reduce){ .device-scr img{animation:none} }
+
+/* ===== Faixa de logos ===== */
+.lmq{margin:clamp(36px,5vw,56px) calc(50% - 50vw) 0; overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent); mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.lmq-row{list-style:none; margin:0; padding:10px 0; display:flex; align-items:center; gap:clamp(48px,7vw,96px); width:max-content; animation:lmq 38s linear infinite}
+.lmq:hover .lmq-row{animation-play-state:paused}
+.lg{flex:none; display:flex; align-items:center; justify-content:center}
+.lg img{display:block; width:auto; height:56px; object-fit:contain; opacity:.85; transition:opacity .4s, transform .4s cubic-bezier(.2,.8,.2,1)}
+.lg.w img{height:46px} .lg.t img{height:70px} .lg.c img{height:62px; border-radius:14px; filter:none}
+.lg img:hover{opacity:1; transform:scale(1.08)}
+@keyframes lmq{to{transform:translateX(calc(-50% - clamp(48px,7vw,96px) / 2))}}
+@media (max-width:600px){ .lg img{height:40px} .lg.w img{height:32px} .lg.t img{height:52px} .lg.c img{height:46px; border-radius:11px} }
+@media (prefers-reduced-motion: reduce){ .lmq-row{animation:none; flex-wrap:wrap; justify-content:center; width:auto; padding-inline:16px} .lmq-row li[aria-hidden]{display:none} }
+.comm-logo{background:transparent !important; box-shadow:none !important}
+.comm-logo img{filter:none !important; opacity:1 !important}
+.lg img.inv, .comm-logo img.inv{filter:var(--logo-filter) !important}
+.comm-logo.crab img{filter:none !important; border-radius:14px}
+.comm-logo.crab{overflow:visible}
+
+/* ===== TOKKA em destaque (paleta da marca) ===== */
+:root{--tk-navy:#030e2e; --tk-deep:#0636b8; --tk-royal:#0a5af0; --tk-sky:#4aa3ff; --tk-ice:#e6f2ff}
+.tokka-media{background:linear-gradient(180deg, rgba(3,14,46,0) 0%, rgba(3,14,46,.7) 14%, var(--tk-navy) 30%); isolation:isolate}
+.tk-waves{position:absolute; inset:-8%; z-index:-1; background:url(tokka-waves.jpg) center/cover; opacity:.28; filter:saturate(.8); transform:scale(calc(1.18 - var(--p) * .12)) rotate(calc((1 - var(--p)) * -4deg)); animation:tkDrift 26s ease-in-out infinite alternate}
+.tk-waves{-webkit-mask-image:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.35) 14%, #000 38%, #000 100%); mask-image:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.35) 14%, #000 38%, #000 100%)}
+.tk-waves::after{content:""; position:absolute; inset:0; background:radial-gradient(60% 55% at 50% 42%, rgba(3,14,46,.7) 0%, rgba(3,14,46,.3) 60%, rgba(3,14,46,0) 100%)}
+#tokka .tokka-media > .tk-fadein{position:absolute; left:0; right:0; top:0; height:min(45%,360px); z-index:-1; pointer-events:none; background:linear-gradient(180deg, var(--bg) 0%, var(--tk-fade-mid) 32%, rgba(3,14,46,.6) 65%, rgba(3,14,46,0) 100%)}
+.tokka-media::before{content:""; position:absolute; inset:0; z-index:-1; background:radial-gradient(80% 60% at 50% 105%, rgba(10,90,240,.45), transparent 70%)}
+@keyframes tkDrift{to{background-position:58% 40%}}
+.tokka-media .expand-copy .tag{color:var(--tk-sky)}
+.tokka-media .expand-copy p{color:var(--tk-ice)}
+.tokka-media h2{line-height:0; margin:4px 0 6px}
+.tk-word{width:clamp(220px,34vw,460px); height:auto; margin:0 auto; filter:drop-shadow(0 18px 40px rgba(10,90,240,.55)); transform:scale(calc(.86 + var(--p) * .14))}
+.tokka-stage{display:flex; align-items:center; justify-content:center; gap:clamp(20px,5vw,72px); --t:var(--p); max-height:52vh}
+.tk-card{width:clamp(170px,24vw,340px); border-radius:22px; box-shadow:0 40px 80px -30px rgba(10,90,240,.9), 0 0 0 1px rgba(74,163,255,.25); transform:rotate(calc(-14deg + var(--t) * 8deg)) translateY(calc((1 - var(--t)) * 60px)) scale(calc(.8 + var(--t) * .2)); opacity:calc(.3 + var(--t) * .7)}
+.tk-phone{width:clamp(140px,16vw,220px); box-shadow:inset 0 0 0 2px #2a4a8a, 0 40px 70px -30px rgba(10,90,240,.8); transform:perspective(1000px) rotateY(calc(-24deg + var(--t) * 14deg)) translateY(calc((1 - var(--t)) * 90px)) scale(calc(.82 + var(--t) * .18)); opacity:calc(.3 + var(--t) * .7)}
+.tk-phone .device-scr{aspect-ratio:415/921; border-radius:30px}
+.tk-phone{padding:7px; border-radius:38px}
+#tokka{--tk-fade-mid:#0b2a6b; background:var(--tk-navy); padding-top:0; padding-bottom:0}
+#tokka .expand-media{border-radius:0 !important; width:100% !important}
+#tokka .tokka-media::after{content:""; position:absolute; left:0; right:0; bottom:0; height:14%; z-index:-1; background:linear-gradient(180deg, transparent, var(--tk-navy)); opacity:var(--p)}
+#tokka .tokka-media{justify-content:center; gap:clamp(14px,2.4vh,26px)}
+#tokka .tokka-stage{max-height:58vh}
+.tokka-band{margin-top:-1px}
+.tokka-band{background:linear-gradient(180deg, var(--tk-navy) 0%, #041645 100%); color:var(--tk-ice); padding-block:0 clamp(72px,10vw,128px)}
+.tk-k{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:var(--tk-sky)}
+.tk-head{text-align:center; display:grid; gap:14px; justify-items:center; margin-bottom:clamp(40px,6vw,64px)}
+.tk-head h3{font-size:clamp(40px,6vw,72px); font-weight:800; letter-spacing:-.035em; line-height:1; color:#fff}
+.tk-lede{font-size:clamp(17px,1.6vw,21px); color:#b9cdf2; max-width:46ch; line-height:1.45}
+.tk-products{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+.tk-prod{border-radius:30px; overflow:hidden; isolation:isolate; clip-path:inset(0 round 30px); display:flex; flex-direction:column; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); box-shadow:inset 0 0 0 1px rgba(122,176,255,.16), 0 30px 60px -30px rgba(0,0,0,.6); transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s}
+.tk-prod:hover{transform:translateY(-6px); box-shadow:inset 0 0 0 1px rgba(122,176,255,.3), 0 40px 70px -30px rgba(10,90,240,.55)}
+.tk-vis{height:clamp(260px,26vw,320px); position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; background:radial-gradient(70% 80% at 50% 100%, rgba(10,90,240,.55), transparent 70%), url(tokka-waves.jpg) center/cover; }
+.tk-vis::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(3,14,46,.78), rgba(3,14,46,.9))}
+.tk-vis > *{position:relative}
+.tk-vis-card img{width:min(48%,240px); border-radius:18px; transform:rotate(-8deg); box-shadow:0 30px 60px -20px rgba(0,0,0,.7); transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.tk-prod:hover .tk-vis-card img{transform:rotate(-3deg) scale(1.04)}
+.tk-vis-phone{align-items:flex-start; padding-top:34px}
+.tk-vis-phone .device{width:clamp(140px,14vw,176px); transform:none; box-shadow:inset 0 0 0 2px #2a4a8a, 0 30px 60px -20px rgba(0,0,0,.7); transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.tk-prod:hover .tk-vis-phone .device{transform:translateY(-10px)}
+.tk-body{padding:28px 30px 32px; display:grid; gap:12px; align-content:start}
+.tk-body h4{font-size:clamp(24px,2.4vw,30px); font-weight:700; letter-spacing:-.02em; line-height:1.12; color:#fff}
+.tk-body p{font-size:16px; color:#b9cdf2; line-height:1.5}
+.tk-specs{list-style:none; margin:4px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:8px}
+.tk-specs li{font-size:13px; font-weight:500; padding:6px 12px; border-radius:980px; color:var(--tk-ice); background:rgba(122,176,255,.1); box-shadow:inset 0 0 0 1px rgba(122,176,255,.2)}
+.tk-chip{width:max-content; font-size:12px; font-weight:600; padding:5px 12px; border-radius:980px; background:var(--tk-royal); color:#fff; margin-top:4px}
+.tk-role{margin-top:20px; border-radius:30px; padding:28px 30px; display:flex; align-items:center; gap:18px 28px; flex-wrap:wrap; background:rgba(255,255,255,.03); box-shadow:inset 0 0 0 1px rgba(122,176,255,.14)}
+.tk-role ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px}
+.tk-role li{font-size:14px; font-weight:500; padding:8px 14px; border-radius:980px; color:#fff; background:linear-gradient(140deg, rgba(10,90,240,.5), rgba(6,54,184,.35)); box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+@media (max-width:833px){ .tk-products{grid-template-columns:1fr} .tk-head{text-align:left; justify-items:start} }
+@media (max-width:600px){ .tokka-stage{gap:14px} .tk-card{width:42vw} .tk-phone{width:34vw} }
+@media (prefers-reduced-motion: reduce){ .tk-waves{animation:none} }
+
+.wa{display:inline-flex; align-items:center; gap:6px; width:max-content; min-height:32px; font-size:13px; font-weight:600; color:var(--wa); text-decoration:none; transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.wa svg{width:16px; height:16px}
+.wa:hover{text-decoration:underline; transform:translateX(2px)}
+
+/* ===== Quem confiou ===== */
+.trust{padding-block:clamp(36px,6vw,64px) clamp(56px,8vw,96px); text-align:center}
+.trust .eyebrow{margin-bottom:8px}
+.trust h2{font-size:clamp(28px,3.6vw,44px); font-weight:700; letter-spacing:-.025em; line-height:1.1}
+.trust-body{max-width:var(--w); margin:0 auto; text-align:left}
+.trust-sub{font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--fg-2); margin:clamp(36px,5vw,56px) 0 14px}
+.trust-legend{font-size:14px; color:var(--fg-2); margin:-4px 0 16px; display:flex; flex-wrap:wrap; align-items:center; gap:6px}
+.crole{display:inline-flex; align-items:center; gap:6px; width:max-content; font-size:12px; font-weight:600; padding:4px 10px; border-radius:980px; line-height:1.2}
+.crole.org{background:var(--accent-fill); color:#fff}
+.crole.part{border:1px solid var(--line); color:var(--fg-2)}
+.crole.win{background:transparent; border:1px solid currentColor; color:var(--ok)}
+.comms{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(6,1fr); gap:16px}
+.comm{grid-column:span 2; background:var(--bg-alt); border-radius:24px; padding:18px; display:flex; align-items:center; gap:16px; min-width:0; transition:transform .5s var(--ease), box-shadow .5s var(--ease)}
+.comm:hover{transform:translateY(-4px); box-shadow:var(--shadow)}
+.comm.lead{grid-column:span 3; flex-direction:column; align-items:stretch; padding:20px 20px 24px}
+.comm-logo{flex:none; width:96px; aspect-ratio:1.25; background:var(--logo-tile); border-radius:16px; display:flex; align-items:center; justify-content:center; padding:12px; box-shadow:0 0 0 1px var(--line) inset}
+.comm.lead .comm-logo{width:100%; aspect-ratio:auto; height:clamp(120px,14vw,160px); padding:clamp(18px,2.4vw,28px)}
+.comm-logo img{max-width:100%; max-height:100%; object-fit:contain; filter:grayscale(1); opacity:.55; transition:filter .9s var(--ease), opacity .9s var(--ease); transition-delay:calc(var(--i) * 140ms)}
+.trust-body.lit .comm-logo img{filter:none; opacity:1}
+.comm-logo.crab{padding:0; overflow:hidden}
+.comm-logo.crab img{width:100%; height:100%; max-height:none; object-fit:cover}
+.comm-info{display:flex; flex-direction:column; gap:6px; min-width:0}
+.comm.lead .comm-info{flex-direction:row; flex-wrap:wrap; align-items:center; margin-top:14px}
+.comm-info strong{font-size:17px; font-weight:600; line-height:1.25}
+.comm.lead .comm-info strong{font-size:21px; width:100%}
+.comm-info p{font-size:15px; color:var(--fg-2); width:100%; margin-top:4px}
+@media (max-width:833px){ .comm,.comm.lead{grid-column:span 6} }
+.logos.inst{grid-template-columns:1fr 1.9fr 1fr 1fr}
+.logos{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr 1fr 1.9fr 1fr 1fr; gap:16px; max-width:var(--w)}
+.logos li{min-width:0; background:var(--logo-tile); border-radius:22px; aspect-ratio:1.6; display:flex; align-items:center; justify-content:center; padding:clamp(14px,2vw,26px); box-shadow:0 0 0 1px var(--line) inset; transition:transform .5s var(--ease), box-shadow .5s var(--ease); position:relative}
+.logos li:hover{transform:translateY(-6px) scale(1.03); box-shadow:0 0 0 1px var(--line) inset, var(--shadow)}
+.logos img{max-width:100%; max-height:100%; object-fit:contain; filter:grayscale(1); opacity:.55; transition:filter .9s var(--ease), opacity .9s var(--ease); transition-delay:calc(var(--i) * 140ms)}
+.trust-body.lit .logos img{filter:none; opacity:1}
+.logos li:hover img{filter:none; opacity:1; transition-delay:0s}
+.logos li.tall img{max-height:88%}
+.logos li.wide img{max-height:70%}
+.logos li.sad{aspect-ratio:auto; padding:14px 18px}
+.logos li.sad img{max-height:none; width:100%}
+@media (max-width:600px){ .logos.inst{grid-template-columns:repeat(2,1fr); gap:12px} .logos li.sad{aspect-ratio:1.6; padding:10px} }
+
+/* ===== Revelação ===== */
+.reveal{transition:opacity 1s var(--ease), transform 1s var(--ease)}
+.reveal.pre{opacity:0; transform:translateY(48px)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+  .manifesto,.expand{height:auto} .manifesto .pin,.expand .pin{position:static; height:auto; padding-block:80px}
+  .expand-media{--p:1 !important; min-height:80vh} .words span{color:var(--fg)}
+  .hero-photo{transform:none}
+}
+</style>
+
+<!-- ===================== NAV ===================== -->
+</head>
+<body>
+<nav class="localnav" id="localnav" aria-label="Seções">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Heitor Sette</a>
+    <ul class="links" id="navLinks">
+      <li><a href="#destaques">Destaques</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#palcos">Palcos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#premios">Prêmios</a></li>
+      <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#fontes">Fontes</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Mostrar seções"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 5l5 5 5-5"/></svg></button>
+    <a class="btn nav-cta" href="#contato">Fale comigo</a>
+  </div>
+</nav>
+
+<main id="top">
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <p class="eyebrow">Analista de Inovação · Product Owner · Instrutor</p>
+    <h1>Heitor Sette<span class="dot">.</span></h1>
+    <p class="tagline">Conecto negócio e tecnologia <span>para gerar soluções com impacto real.</span></p>
+    <div class="ctas">
+      <a class="btn" href="#projetos">Ver projetos</a>
+      <a class="link" href="https://www.linkedin.com/in/heitorsettecouto/" target="_blank" rel="noopener">Conectar no LinkedIn</a>
+    </div>
+    <div class="hero-stage">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="hero-photo" id="heroPhoto"><img data-img="olintech-hero" alt="Heitor Sette sorrindo no OlinTech 2026, com camisa do GDG Recife e crachá de palestrante." style="object-position:50% 30%"></div>
+      <a class="chip c1" href="#florescer" aria-label="1º lugar no NASA Space Apps Recife 2024: ver o Florescer"><span class="chip-in"><span class="ico"><img src="logo-nasa-space-apps.png" alt=""></span><span>1º lugar · NASA Space Apps<small>Recife 2024 · etapa global</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span></span></a>
+      <a class="chip c2" href="#palcos" aria-label="Organizador do GDG Recife: ver palcos e comunidade"><span class="chip-in"><span class="ico"><img src="logo-gdg.png" alt=""></span><span>Organizador<small>GDG Recife</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span></span></a>
+      <a class="chip c3" href="#trajetoria" aria-label="Instrutor no Senac Pernambuco: ver trajetória"><span class="chip-in"><span class="ico"><img src="logo-senac.png" alt=""></span><span>Instrutor<small>Senac Pernambuco</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 1.5L7 5l-3.5 3.5"/></svg></span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUEM CONFIOU ===================== -->
+<section class="trust" aria-labelledby="trustTitle">
+  <div class="wrap">
+    <p class="eyebrow">Instituições e comunidades</p>
+    <h2 id="trustTitle">Quem confiou no meu trabalho.</h2>
+    <div id="logos" class="trust-body">
+      <div class="lmq" aria-label="Instituições e comunidades">
+        <ul class="lmq-row"><li class="lg m"><img class="inv" src="logo-senac.png" alt="Senac Pernambuco" title="Senac Pernambuco" loading="lazy"></li><li class="lg m"><img src="logo-gdg.png" alt="Google Developer Groups Recife" title="Google Developer Groups Recife" loading="lazy"></li><li class="lg w"><img class="inv" src="logo-sad-pe.png" alt="Secretaria de Administração do Governo de Pernambuco" title="Secretaria de Administração do Governo de Pernambuco" loading="lazy"></li><li class="lg t"><img class="inv" src="logo-nasa-space-apps.png" alt="NASA Space Apps Challenge" title="NASA Space Apps Challenge" loading="lazy"></li><li class="lg t"><img class="inv" src="logo-erem.png" alt="EREM Padre Guedes, Vicência" title="EREM Padre Guedes, Vicência" loading="lazy"></li><li class="lg w"><img class="inv" src="logo-rfec.png" alt="Recife Frontend Community" title="Recife Frontend Community" loading="lazy"></li><li class="lg t"><img class="inv" src="logo-manguezal.png" alt="Manguez.al" title="Manguez.al" loading="lazy"></li><li class="lg c"><img src="logo-codecrab.png" alt="Code Crab Community" title="Code Crab Community" loading="lazy"></li><li class="lg t"><img src="logo-parceiro-e.png" alt="Parceiro" title="Parceiro" loading="lazy"></li><li class="lg m" aria-hidden="true"><img class="inv" src="logo-senac.png" alt="" title="Senac Pernambuco" loading="lazy"></li><li class="lg m" aria-hidden="true"><img src="logo-gdg.png" alt="" title="Google Developer Groups Recife" loading="lazy"></li><li class="lg w" aria-hidden="true"><img class="inv" src="logo-sad-pe.png" alt="" title="Secretaria de Administração do Governo de Pernambuco" loading="lazy"></li><li class="lg t" aria-hidden="true"><img class="inv" src="logo-nasa-space-apps.png" alt="" title="NASA Space Apps Challenge" loading="lazy"></li><li class="lg t" aria-hidden="true"><img class="inv" src="logo-erem.png" alt="" title="EREM Padre Guedes, Vicência" loading="lazy"></li><li class="lg w" aria-hidden="true"><img class="inv" src="logo-rfec.png" alt="" title="Recife Frontend Community" loading="lazy"></li><li class="lg t" aria-hidden="true"><img class="inv" src="logo-manguezal.png" alt="" title="Manguez.al" loading="lazy"></li><li class="lg c" aria-hidden="true"><img src="logo-codecrab.png" alt="" title="Code Crab Community" loading="lazy"></li><li class="lg t" aria-hidden="true"><img src="logo-parceiro-e.png" alt="" title="Parceiro" loading="lazy"></li></ul>
+      </div>
+
+      <h3 class="trust-sub">Comunidades</h3>
+      <p class="trust-legend"><span class="crole org">Organização</span> quando estive nos bastidores · <span class="crole part">Participante</span> quando aprendi e me conectei</p>
+      <ul class="comms">
+        <li class="comm lead" style="--i:4">
+          <div class="comm-logo"><img src="logo-gdg.png" alt=""></div>
+          <div class="comm-info"><strong>Google Developer Groups Recife</strong><span class="crole org">Organização</span><p>Organização do Build with AI, convite para organizar os próximos eventos e palestra no OlinTech 2026.</p></div>
+        </li>
+        <li class="comm lead" style="--i:5">
+          <div class="comm-logo"><img class="inv" src="logo-nasa-space-apps.png" alt=""></div>
+          <div class="comm-info"><strong>NASA Space Apps Challenge</strong><span class="crole org">Organização e mentoria · 2025</span><span class="crole win">Campeão Recife · 2024</span><p>Venci a etapa Recife com o Florescer e, no ano seguinte, voltei para administrar o evento e mentorar equipes.</p></div>
+        </li>
+        <li class="comm" style="--i:6">
+          <div class="comm-logo"><img class="inv" src="logo-rfec.png" alt=""></div>
+          <div class="comm-info"><strong>Recife Frontend Community</strong><span class="crole part">Participante</span><a class="wa" href="https://chat.whatsapp.com/JFCteWc1fCY7e88y4hKUA6" target="_blank" rel="noopener" aria-label="Entrar no grupo da RFEC no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>Grupo no WhatsApp</a></div>
+        </li>
+        <li class="comm" style="--i:7">
+          <div class="comm-logo"><img class="inv" src="logo-manguezal.png" alt=""></div>
+          <div class="comm-info"><strong>Manguez.al</strong><span class="crole part">Participante</span><a class="wa" href="https://chat.whatsapp.com/BtVH82y6buu1KgTVVOtWOy" target="_blank" rel="noopener" aria-label="Entrar no grupo do Manguez.al no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>Grupo no WhatsApp</a></div>
+        </li>
+        <li class="comm" style="--i:8">
+          <div class="comm-logo crab"><img src="logo-codecrab.png" alt=""></div>
+          <div class="comm-info"><strong>Code Crab Community</strong><span class="crole part">Participante</span><a class="wa" href="https://chat.whatsapp.com/LECI5Vu4ZTG2lxkc4gX5WF" target="_blank" rel="noopener" aria-label="Entrar no grupo da Code Crab no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>Grupo no WhatsApp</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DESTAQUES ===================== -->
+<section class="hl band alt" id="destaques" aria-roledescription="carrossel" aria-label="Destaques">
+  <div class="wrap section-head reveal"><h2 class="headline">Destaques.</h2></div>
+  <div class="hl-track" id="hlTrack" tabindex="0" aria-label="Role para ver os destaques">
+    <article class="hl-card"><img data-img="instrutor" alt="Selfie de Heitor em uma sala de aula cheia de alunos uniformizados."><div class="hl-copy"><span class="tag">Senac Pernambuco · 2026</span><h3>De aluno a instrutor do Senac.</h3><p>Estudei redes, hardware e programação no Senac. Hoje ensino informática para uma nova turma em Vicência.</p></div></article>
+    <article class="hl-card"><img data-img="nasa24-premiacao" alt="Equipe Fulô de Mandacaru comemorando com o troféu na premiação do NASA Space Apps Recife 2024." style="object-position:50% 40%"><div class="hl-copy"><span class="tag">NASA Space Apps Recife · out 2024</span><h3>1º lugar com o Florescer. Rumo à etapa global.</h3><p>Equipe Fulô de Mandacaru, formada por alunos do Mediotec Senac.</p><a href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2024/11/estudantes-do-senac-recife-sao-selecionados-para-etapa-global-da-nasa.html" target="_blank" rel="noopener">Diario de Pernambuco ↗</a></div></article>
+    <article class="hl-card"><img data-img="arrecifes-premio" alt="Equipe Arrecifes no palco segurando o cheque simbólico de 1º lugar no Desafio 02 do HackerCidadão."><div class="hl-copy"><span class="tag">HackerCidadão 12.0 · mar 2025</span><h3>1º lugar no Desafio 2 com o Arrecifes.</h3><p>Gamificação no Conecta Recife: Capibas para quem doa sangue, vacina e adota. Prêmio de R$ 7 mil.</p><a href="https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/" target="_blank" rel="noopener">Senac Pernambuco ↗</a></div></article>
+    <article class="hl-card"><img data-img="nasa25-cetene" alt="Equipe de organização e mentores do NASA Space Apps Recife 2025 em frente ao painel do CETENE."><div class="hl-copy"><span class="tag">NASA Space Apps Recife · out 2025</span><h3>Do pódio à mentoria, um ano depois.</h3><p>Na administração do evento, orientei de perto a Naipi, campeã, e a E-32, segunda colocada.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7384564824833191936/" target="_blank" rel="noopener">Publicação no LinkedIn ↗</a></div></article>
+    <article class="hl-card"><img data-img="bwai-gdg" alt="Foto coletiva de participantes do Build with AI, do GDG Recife, em um auditório."><div class="hl-copy"><span class="tag">GDG Recife · 2026</span><h3>Bastidores do Build with AI.</h3><p>Conectei equipes, apoiei voluntários e palestrantes e geri as entregas de design. Saí do evento convidado a organizar os próximos.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7459553453657243648/" target="_blank" rel="noopener">Publicação no LinkedIn ↗</a></div></article>
+    <article class="hl-card"><img data-img="recnplay-fala" alt="Heitor falando ao microfone em frente a um slide sobre hard skills e soft skills."><div class="hl-copy"><span class="tag">REC’n’Play 2025 · CESAR School</span><h3>A importância dos hackathons no ambiente corporativo.</h3><p>Palestra no festival com Guto Costa, trazendo convidados que transformaram hackathons em conquistas.</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7385280494269198336/" target="_blank" rel="noopener">Publicação no LinkedIn ↗</a></div></article>
+    <article class="hl-card"><img data-img="sad-premio" alt="Heitor recebendo certificado no palco ao lado da governadora, com seu nome no telão: 3º lugar nível médio."><div class="hl-copy"><span class="tag">Governo de Pernambuco · set 2025</span><h3>3º lugar no Concurso de Dissertações da SAD/PE.</h3><p>Tema: presença digital e o fenômeno do cancelamento. Premiação no Centro de Convenções de Pernambuco.</p><a href="https://www.sad.pe.gov.br/geral/492-geral/23424-divulgado-resultado-do-vii-concurso-de-dissertacao-para-estagiarios-do-poder-executivo-estadual" target="_blank" rel="noopener">Resultado oficial ↗</a></div></article>
+    <article class="hl-card"><img data-img="eds-laptop" alt="Heitor apontando para a tela de um notebook cheio de adesivos enquanto dois colegas acompanham."><div class="hl-copy"><span class="tag">Hackathon EDScript_ · 2026</span><h3>Product Owner no desafio de UX.</h3><p>Reformulação do fluxo de telas do app e do site da Esportes da Sorte, com um time de seis pessoas.</p></div></article>
+    <article class="hl-card"><img data-img="devfest-trilha" alt="Heitor e um colega na Trilha Frontend do DevFest Pernambuco."><div class="hl-copy"><span class="tag">DevFest Pernambuco · 2025</span><h3>No palco da Trilha Frontend.</h3><p>Uma conversa sobre como eventos de tecnologia ajudam a construir um portfólio autêntico.</p></div></article>
+  </div>
+  <div class="hl-controls">
+    <button class="round" id="hlPrev" aria-label="Destaque anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3L5 8l5 5"/></svg></button>
+    <div class="dots" id="hlDots" role="group" aria-label="Escolher destaque"></div>
+    <button class="round" id="hlNext" aria-label="Próximo destaque"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg></button>
+    <button class="round" id="hlPlay" aria-label="Pausar reprodução automática"><svg viewBox="0 0 16 16" fill="currentColor" id="hlPlayIcon"><rect x="3" y="2" width="3.5" height="12" rx="1"/><rect x="9.5" y="2" width="3.5" height="12" rx="1"/></svg></button>
+  </div>
+</section>
+
+<!-- ===================== MANIFESTO ===================== -->
+<section class="manifesto" id="manifesto" aria-label="Em minhas palavras">
+  <div class="pin"><div class="wrap">
+    <p class="words" id="words" data-hi="instrutor. outras pessoas">“Há um tempo eu era aluno no Senac, aprendendo redes, montagem de máquinas e programação. Hoje estou do outro lado da sala, como instrutor. Meu papel agora é ajudar outras pessoas a encontrarem uma porta de entrada para a tecnologia.”</p>
+    <p class="attrib">Heitor Sette, em publicação no LinkedIn</p>
+  </div></div>
+</section>
+
+<!-- ===================== NÚMEROS ===================== -->
+<section class="band" aria-label="Em números">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Em números</p><h2 class="headline">Quatro anos.<br>Muita estrada.</h2></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="num" data-count="7">7</div><p>premiações em hackathons, ideathons e concursos</p></div>
+      <div class="stat"><div class="num" data-count="14">14</div><p>projetos entre produtos, protótipos e pesquisas</p></div>
+      <div class="stat"><div class="num" data-count="15">15</div><p>crachás de eventos, como organizador, palestrante, mentor e participante</p></div>
+      <div class="stat"><div class="num" data-count="1333" data-fmt="pt">1.333</div><p>seguidores no LinkedIn</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOKKA ===================== -->
+<section class="expand" id="tokka" aria-label="TOKKA">
+  <div class="pin">
+    <div class="expand-media tokka-media">
+      <div class="tk-waves" aria-hidden="true"></div><div class="tk-fadein" aria-hidden="true"></div>
+      <div class="expand-copy"><h2><img class="tk-word" src="tokka-wordmark.png" alt="TOKKA"></h2><p>Um toque para conectar. Cartões de contato e cardápios digitais que abrem direto no celular.</p></div>
+      <div class="tokka-stage" aria-hidden="true">
+        <img class="tk-card" data-img="tokka-cartao" alt="">
+        <div class="device tk-phone"><div class="device-scr"><img data-img="tokka-cardapio-full" alt=""></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tokka-band">
+  <div class="wrap">
+    <div class="tk-head">
+      <p class="tk-k">Dois produtos, uma ideia</p>
+      <h3>Encostou, conectou.</h3>
+      <p class="tk-lede">A TOKKA leva o mundo físico para o digital com um toque: o cartão de visita que vira perfil e o cardápio que o restaurante atualiza sozinho.</p>
+    </div>
+    <div class="tk-products">
+      <article class="tk-prod reveal">
+        <div class="tk-vis tk-vis-card"><img data-img="tokka-cartao" alt="Cartão TOKKA azul com o símbolo de aproximação NFC, na mão de uma pessoa."></div>
+        <div class="tk-body">
+          <span class="tk-k">TOKKA Contact</span>
+          <h4>Seu contato inteiro<br>em um cartão.</h4>
+          <p>Encoste no celular ou leia o QR Code e o perfil digital abre na hora, sem app.</p>
+          <ul class="tk-specs"><li>NFC</li><li>QR Code</li><li>Perfil editável</li></ul>
+          <span class="tk-chip">Em desenvolvimento</span>
+        </div>
+      </article>
+      <article class="tk-prod reveal">
+        <div class="tk-vis tk-vis-phone"><div class="device"><div class="device-scr"><img data-img="tokka-cardapio" alt="Cardápio TOKKA da Barraca do Fábio no celular."></div></div></div>
+        <div class="tk-body">
+          <span class="tk-k">TOKKA Cardápios</span>
+          <h4>O cardápio que<br>o restaurante controla.</h4>
+          <p>Preços, fotos, promoções e disponibilidade atualizados pelo próprio dono. Já roda na Barraca do Fábio, em Boa Viagem.</p>
+          <ul class="tk-specs"><li>Categorias</li><li>Busca</li><li>Promoções</li></ul>
+          <span class="tk-chip">Em desenvolvimento</span>
+        </div>
+      </article>
+    </div>
+    <div class="tk-role reveal">
+      <span class="tk-k">Meu papel · do logo ao balcão</span>
+      <ul><li>Identidade da marca</li><li>Arquitetura do sistema</li><li>Segurança</li><li>Ativação dos cartões</li><li>Precificação</li><li>Venda em marketplaces</li><li>Apresentação comercial</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJETOS ===================== -->
+<section class="band alt" id="projetos">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Projetos</p><h2 class="headline">Problemas reais.<br>Produtos pensados.</h2><p class="lede">Cada projeto mostra em que estágio está. Alguns foram premiados, outros são protótipos ou produtos em construção. Toque em <strong>+</strong> para ver problema, papel e solução.</p></div>
+    <div class="bento">
+      <article class="tile wide reveal">
+        <div class="tcopy"><span class="cat">FoodService · NFC e QR</span><h3>TOKKA Cardápios</h3><p>Cardápio digital que o próprio restaurante atualiza: categorias, destaques, busca e promoções.</p><span class="stage dev">Em desenvolvimento</span></div>
+        <div class="tvis"><span class="example">Barraca do Fábio · Boa Viagem</span>
+          <div class="device tilt"><div class="device-scr"><img data-img="tokka-cardapio" alt="Tela do TOKKA Cardápios da Barraca do Fábio, em Boa Viagem: banner de promoção, busca, categorias Peixes, Bebidas e Carnes e lista de destaques com preços."></div></div>
+        </div>
+        <button class="plus" data-project="cardapios" aria-label="Saiba mais sobre TOKKA Cardápios"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">NFC · Contatos</span><h3>TOKKA Contact</h3><p>Um toque do cartão no celular abre um perfil digital personalizável.</p><span class="stage dev">Em desenvolvimento</span></div>
+        <div class="tvis"><img class="tokka-photo tilt" data-img="tokka-cartao" alt="Mão segurando o cartão TOKKA, azul com ondas e o símbolo de aproximação NFC."></div>
+        <button class="plus" data-project="tokka" aria-label="Saiba mais sobre TOKKA Contact"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">Civic Tech · Recife</span><h3>Arrecifes</h3><p>Moedas digitais, as Capibas, como recompensa para quem doa sangue, vacina em dia ou adota um animal. Desafio 2: gamificação no Conecta Recife.</p><span class="stage won">1º lugar · HackerCidadão 12.0 · R$ 7 mil</span><a class="srclink" href="https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/" target="_blank" rel="noopener">Matéria do Senac PE</a></div>
+        <div class="tvis"><span class="example">Interface ilustrativa</span>
+          <div class="phone" aria-hidden="true"><div class="scr"><div class="island"></div><span class="lbl">Seu saldo</span><div class="bal">1.250 <span>Capibas</span></div>
+            <ul><li><i style="--c:#ff453a"></i>Doação de sangue<b>+200</b></li><li><i style="--c:#0a84ff"></i>Vacina em dia<b>+50</b></li><li><i style="--c:#ff9f0a"></i>Adoção responsável<b>+300</b></li><li><i style="--c:#30d158"></i>Exame preventivo<b>+80</b></li></ul>
+            <div class="pbtn">Resgatar recompensas</div></div></div>
+        </div>
+        <button class="plus" data-project="arrecifes" aria-label="Saiba mais sobre Arrecifes"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">GovTech · OCR e IA</span><h3>Gestão de faturas</h3><p>Leitura automática de contas de água e energia, com alerta de inconsistências e revisão humana.</p><span class="stage proto">Desafio Banco do Brasil</span></div>
+        <div class="tvis"><span class="example">Exemplo ilustrativo</span>
+          <div class="invoice" aria-hidden="true"><div class="scan"></div><h5>Conta de energia · out</h5>
+            <div class="ln"><span>Unidade</span>Administrativa 014</div><div class="ln"><span>Consumo</span>1.482 kWh</div><div class="ln"><span>Valor</span>R$ 2.317,40</div><div class="ln"><span>Vencimento</span>10/11</div>
+            <div class="flag">⚠ Consumo 38% acima da média dos últimos 6 meses</div></div>
+        </div>
+        <button class="plus" data-project="faturas" aria-label="Saiba mais sobre Gestão de faturas"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">HealthTech · Acessibilidade</span><h3>Saúde na Palma da Mão</h3><p>Pré-triagem que indica o tipo de atendimento certo. Sem diagnóstico.</p><span class="stage proto">Protótipo</span></div>
+        <div class="tvis"><span class="example">Exemplo ilustrativo</span>
+          <div class="triage" aria-hidden="true"><div class="bubble bot">Há quanto tempo você sente esses sintomas?</div><div class="opts"><span>Hoje</span><span>2 a 3 dias</span><span>Mais de uma semana</span></div><div class="bubble me">2 a 3 dias</div><div class="bubble bot">Indicação: agende na sua Unidade Básica de Saúde. Encontrei horários para quinta.</div></div>
+        </div>
+        <button class="plus" data-project="palma" aria-label="Saiba mais sobre Saúde na Palma da Mão"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile third reveal">
+        <div class="tcopy"><span class="cat">FoodTech</span><h3>Flash Food</h3><p>Pedido antecipado na cantina da escola, pago no app e retirado com QR Code.</p><span class="stage proto">Protótipo</span></div>
+        <div class="tvis" style="flex-direction:column"><div class="qr" id="qr" aria-hidden="true"></div><p class="ready">Pedido #0427 pronto<small>Retire no balcão 2</small></p></div>
+        <button class="plus" data-project="flash" aria-label="Saiba mais sobre Flash Food"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile third reveal">
+        <div class="tcopy"><span class="cat">HealthTech · IA</span><h3>I.AI Doutor</h3><p>Resumo de exames para apoiar o médico no acompanhamento.</p><span class="stage hack">HackaHealth</span></div>
+        <div class="tvis"><div class="spark" aria-hidden="true"><div class="t">Glicemia em jejum · 6 exames</div><div class="v">94 mg/dL</div><svg viewBox="0 0 200 70" preserveAspectRatio="none"><path d="M0 52 L40 44 L80 48 L120 30 L160 36 L200 26 L200 70 L0 70Z" fill="var(--accent)" opacity=".12"/><path d="M0 52 L40 44 L80 48 L120 30 L160 36 L200 26" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/><circle cx="200" cy="26" r="4" fill="var(--accent)"/></svg></div></div>
+        <button class="plus" data-project="doutor" aria-label="Saiba mais sobre I.AI Doutor"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile third reveal">
+        <div class="tcopy"><span class="cat">GovTech · WhatsApp</span><h3>Chatbot de Saúde</h3><p>Agendamento, exames e teleconsulta pelo canal que todo mundo já usa.</p><span class="stage hack">HackerCidadão 13</span></div>
+        <div class="tvis"><div class="triage" aria-hidden="true"><div class="bubble me">Quero ver o resultado do meu exame</div><div class="bubble bot">Seu hemograma ficou pronto ontem. Quer que eu envie o PDF?</div></div></div>
+        <button class="plus" data-project="chatbot" aria-label="Saiba mais sobre Chatbot de Saúde"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">EdTech · IA</span><h3>Facilit.ai</h3><p>Assistente para professores no WhatsApp: planos de aula, exercícios e provas.</p><span class="stage hack">Primeiro hackathon</span></div>
+        <div class="tvis"><div class="triage" aria-hidden="true"><div class="bubble me">Crie 5 exercícios sobre TCP/IP para o 2º ano técnico</div><div class="bubble bot">Pronto. Montei 5 questões com gabarito e um plano de aula de 50 minutos.</div></div></div>
+        <button class="plus" data-project="facilit" aria-label="Saiba mais sobre Facilit.ai"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></button>
+      </article>
+
+      <article class="tile reveal">
+        <div class="tcopy"><span class="cat">Em estudo</span><h3>No laboratório</h3><p>Ideias em pesquisa e prototipação.</p></div>
+        <div class="tvis" style="align-items:flex-start; padding-top:10px"><ul class="study">
+          <li>Funcionando.br<span>Vídeos com assinatura e pagamentos</span></li>
+          <li>Split Payment<span>Pesquisa tributária</span></li>
+          <li>Vídeos 3D automatizados<span>Three.js e Remotion</span></li>
+          <li>Materiais didáticos<span>Aulas interativas</span></li>
+        </ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FLORESCER ===================== -->
+<section class="expand" id="florescer" aria-label="Florescer">
+  <div class="pin">
+    <div class="expand-media" id="expandMedia">
+      <div class="expand-copy"><span class="tag">EdTech · Equipe Fulô de Mandacaru</span><h2>Florescer.</h2><p>Os 17 Objetivos de Desenvolvimento Sustentável da ONU viram projetos práticos dentro da escola.</p></div>
+      <div class="screen" role="img" aria-label="Os 17 Objetivos de Desenvolvimento Sustentável da ONU na tela do Florescer"><div class="screen-top"><i></i><i></i><i></i><b>Florescer · Trilhas ODS</b></div><div class="sdg" id="sdg"></div></div>
+    </div>
+  </div>
+</section>
+<section class="band" style="padding-top:0">
+  <div class="wrap">
+    <div class="strip reveal">
+      <figure><img data-img="nasa24-trofeu" alt="Seis integrantes da equipe segurando juntos o troféu do NASA Space Apps."><figcaption>O troféu da etapa Recife, 2024</figcaption></figure>
+      <figure><img data-img="nasa24-equipe" alt="Selfie da equipe Fulô de Mandacaru em frente ao banner do Space Apps."><figcaption>Equipe Fulô de Mandacaru</figcaption></figure>
+      <figure><img data-img="senac-cert-3" alt="Heitor com a camisa do Mediotec Senac segurando o certificado de reconhecimento pelo 1º lugar."><figcaption>Reconhecimento no Senac</figcaption></figure>
+    </div>
+    <div class="florescer-facts reveal">
+      <div class="fact"><div class="big p1">1º</div><h4>NASA Space Apps 2024</h4><p>Campeão da etapa Recife, em outubro de 2024. A equipe foi classificada para a etapa global.</p><a class="srclink" href="https://www.pe.senac.br/alunos-do-mediotec-senac-recife-vencem-maratona-de-programacao-da-nasa/" target="_blank" rel="noopener">Senac Pernambuco</a></div>
+      <div class="fact"><div class="big p3">3º</div><h4>Demoday Startup Way</h4><p>Reconhecimento no REC’n’Play para a equipe Fulô de Mandacaru.</p></div>
+      <div class="fact"><div class="big p2">2º</div><h4>CopaEZ 2024</h4><p>Categoria Ensino Médio. No time, cuidei do backlog, do MVP e do modelo de negócio.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASO PO ===================== -->
+<section class="band" id="produto">
+  <div class="wrap case">
+    <div class="collage reveal">
+      <img class="tall" data-img="eds-anotando" alt="Heitor anotando em um caderno durante o hackathon.">
+      <img data-img="eds-mentoria" alt="Heitor mostrando um tablet para mentores e avaliadores.">
+      <img data-img="eds-grupo" alt="Equipe de seis pessoas reunida em um saguão.">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Gestão de produto</p>
+      <h2 class="headline" style="font-size:clamp(36px,5vw,64px)">Product Owner na Esportes da Sorte.</h2>
+      <p class="lede" style="margin-top:18px">Liderei a definição, a validação e a evolução de soluções para o produto, com foco em comportamento do usuário e decisões orientadas a valor. Um dos objetivos foi tornar a experiência <strong>mais leve, gamificada e centrada em entretenimento</strong>.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><strong>Análise comportamental</strong> de padrões de navegação e tomada de decisão.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><strong>Benchmarking</strong> para achar lacunas e oportunidades de mercado.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><strong>Discovery orientado a problema</strong>, ligando solução e necessidade real.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><strong>Backlog priorizado</strong> por impacto, viabilidade e risco, com protótipos validados.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PALCOS ===================== -->
+<section class="band ink" id="palcos">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Palcos e comunidade</p><h2 class="headline">Falar sobre tecnologia<br>também é construir.</h2><p class="lede">Palestras, rodas de conversa e organização de eventos, quase sempre sobre o mesmo tema: <strong>hackathons como porta de entrada</strong>.</p></div>
+    <div class="talks">
+      <article class="talk reveal"><img data-img="olintech" alt="Heitor no galpão do OlinTech 2026, com crachá de palestrante." style="object-position:50% 25%"><div class="tc"><span class="when">17 a 19 set 2026 · Olinda</span><h4>OlinTech 2026</h4><p>Google Developer Groups e DevFest: como a comunidade do Google de Recife atua no ecossistema.</p><a class="srclink" href="https://www.olintech.com.br/palestrantes#cmu8oge410036qe445lrw8noa" target="_blank" rel="noopener">Página de palestrantes</a></div></article>
+      <article class="talk reveal"><img data-img="recnplay-fala" alt="Heitor falando ao microfone diante do slide de hard e soft skills."><div class="tc"><span class="when">17 out 2025 · CESAR School, sala 205</span><h4>A importância dos hackathons no ambiente corporativo</h4><p>REC’n’Play 2025, com Guto Costa e convidados.</p><a class="srclink" href="https://www.linkedin.com/feed/update/urn:li:activity:7385280494269198336/" target="_blank" rel="noopener">Publicação no LinkedIn</a></div></article>
+      <article class="talk reveal"><img data-img="snct-palco" alt="Heitor, Caio Esdras e João Souza no palco da SNCT Paulista, sob o telão “Importância de hackathons no ambiente público”."><div class="tc"><span class="when">24 out 2025 · Paulista</span><h4>Hackathons no ambiente público</h4><p>Semana Nacional de Ciência e Tecnologia. Também mediei a conversa com as startups Evalog e FiveUp.</p><a class="srclink" href="https://www.linkedin.com/feed/update/urn:li:activity:7387816728648388611/" target="_blank" rel="noopener">Publicação no LinkedIn</a></div></article>
+      <article class="talk reveal"><img data-img="golpes-palestra" alt="Heitor ao microfone no Porto Digital diante do slide “Regras”: balão verde ou vermelho para dizer se é golpe."><div class="tc"><span class="when">Porto Digital</span><h4>É golpe ou não é?</h4><p>Dinâmica com balões verde e vermelho para ensinar o público a reconhecer golpes digitais.</p><span class="self">Foto enviada por Heitor</span></div></article>
+      <article class="talk reveal"><img data-img="devfest-trilha" alt="Heitor e um colega em frente ao banner da Trilha Frontend do DevFest Pernambuco."><div class="tc"><span class="when">2025 · DevFest Pernambuco</span><h4>Eventos tech e um portfólio autêntico</h4><p>Trilha Frontend, com apoio da RFEC e do GDG Recife.</p><a class="srclink" href="https://www.linkedin.com/feed/update/urn:li:activity:7401207671141568512/" target="_blank" rel="noopener">Publicação no LinkedIn</a></div></article>
+      <article class="talk reveal"><img data-img="bits-2" alt="Heitor com dois amigos em frente à tela do evento Bits and Charts."><div class="tc"><span class="when">23 jan 2026 · Recife</span><h4>Bits and Charts</h4><p>Bate-papo sobre eventos, dados e comunidades, com a Recife Front-End Community e a DSE.</p><a class="srclink" href="https://www.linkedin.com/feed/update/urn:li:activity:7420828886189617152/" target="_blank" rel="noopener">Publicação no LinkedIn</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERIA ===================== -->
+<section class="band ink" id="galeria" style="padding-top:0">
+  <div class="wrap">
+    <div class="gallery-top">
+      <div class="reveal"><p class="eyebrow">Galeria</p><h2 class="headline">Por trás das fotos.</h2></div>
+      <div class="seg" role="tablist" aria-label="Filtrar galeria" id="galFilter">
+        <button role="tab" aria-selected="true" data-f="all">Todas</button>
+        <button role="tab" aria-selected="false" data-f="palco">Palcos</button>
+        <button role="tab" aria-selected="false" data-f="comunidade">Comunidade</button>
+        <button role="tab" aria-selected="false" data-f="hackathon">Hackathons</button>
+        <button role="tab" aria-selected="false" data-f="carreira">Carreira</button>
+      </div>
+    </div>
+    <p class="gcount" id="gcount" aria-live="polite"></p>
+    <div class="masonry" id="masonry" style="margin-top:18px"></div>
+  </div>
+</section>
+
+<!-- ===================== CRACHÁS ===================== -->
+<section class="band" id="crachas">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Crachás</p><h2 class="headline">Quinze crachás.<br>Cada um, uma história.</h2><p class="lede">A coleção mostra os papéis que assumi no ecossistema: <strong>organizador, palestrante, mentor e participante</strong>.</p></div>
+    <div class="badges">
+      <figure class="reveal"><img data-img="crachas" alt="Quinze crachás de eventos sobre uma colcha xadrez: Build with AI, Romathoon, InovaTec, REC’n’Play, ConSaúde, Conecta Recife, TDC Summit, DevFest, Space Apps, Brain Innovation Summit e SNCT Paulista."></figure>
+      <div class="badge-groups reveal">
+        <div><h4>Organização e mentoria</h4><ul>
+          <li>Build with AI · GDG Recife<span>Organização</span></li>
+          <li>NASA Space Apps Recife 2025<span>Gestor e mentor</span></li></ul></div>
+        <div><h4>Palestrante</h4><ul>
+          <li>REC’n’Play<span>Dois crachás de palestrante</span></li>
+          <li>DevFest Pernambuco<span>Speaker</span></li>
+          <li>SNCT Paulista 2025<span>Palestrante</span></li>
+          <li>OlinTech 2026<span>Palestrante</span></li></ul></div>
+        <div><h4>Competições</h4><ul>
+          <li>NASA Space Apps 2024<span>Fulô de Mandacaru · 1º lugar</span></li>
+          <li>Conecta Recife 2025<span>Hacker Cidadão</span></li>
+          <li>3º ConSaúde · SUS 5.0<span>Ideathon · abr 2026</span></li>
+          <li>Romathoon · Nova Roma<span>Participante</span></li></ul></div>
+        <div><h4>Participação</h4><ul>
+          <li>Brain Innovation Summit<span>Dois crachás</span></li>
+          <li>TDC Summit · Inteligência Artificial<span>Participante</span></li>
+          <li>InovaTec<span>Representante</span></li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRÊMIOS ===================== -->
+<section class="band alt" id="premios">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Prêmios</p><h2 class="headline">Pódios.</h2><p class="lede">Os três primeiros têm registro público. Os demais constam do meu histórico e ainda não têm fonte on-line.</p></div>
+    <div class="awards-top">
+      <article class="award photo reveal"><img data-img="nasa24-premiacao" alt="Equipe com o troféu na premiação do NASA Space Apps Recife 2024."><div class="ac"><div class="place p1">1<sup>º</sup></div><h4>NASA Space Apps Challenge 2024 · Recife</h4><p>Projeto Florescer, equipe Fulô de Mandacaru. Classificado para a etapa global.</p><a class="srclink" href="https://www.pe.senac.br/alunos-do-mediotec-senac-recife-vencem-maratona-de-programacao-da-nasa/" target="_blank" rel="noopener">Senac Pernambuco</a><a class="srclink" href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2024/11/estudantes-do-senac-recife-sao-selecionados-para-etapa-global-da-nasa.html" target="_blank" rel="noopener">Diario de Pernambuco</a></div></article>
+      <article class="award photo reveal"><img data-img="arrecifes-premio" alt="Equipe Arrecifes com o cheque simbólico de 1º lugar e R$ 7.000."><div class="ac"><div class="place p1">1<sup>º</sup></div><h4>HackerCidadão 12.0 · Desafio 2</h4><p>Arrecifes: gamificação no Conecta Recife. Prêmio de R$ 7 mil, em março de 2025.</p><a class="srclink" href="https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/" target="_blank" rel="noopener">Senac Pernambuco</a></div></article>
+      <article class="award photo reveal"><img data-img="sad-premio" alt="Heitor no palco com o certificado, com seu nome no telão como 3º lugar nível médio."><div class="ac"><div class="place p3">3<sup>º</sup></div><h4>VII Concurso de Dissertações · SAD/PE</h4><p>Tema: “Presença digital e o fenômeno do cancelamento: o perigo dos julgamentos online”.</p><a class="srclink" href="https://www.sad.pe.gov.br/geral/492-geral/23424-divulgado-resultado-do-vii-concurso-de-dissertacao-para-estagiarios-do-poder-executivo-estadual" target="_blank" rel="noopener">Resultado oficial</a><a class="srclink" href="https://www.linkedin.com/feed/update/urn:li:activity:7371195843036491776/" target="_blank" rel="noopener">Publicação no LinkedIn</a></div></article>
+    </div>
+    <div class="awards-rest">
+      <article class="award reveal"><div class="place p3">3<sup>º</sup></div><h4>Demoday Startup Way · REC’n’Play</h4><p>Projeto Florescer.</p><span class="self">Relato pessoal</span></article>
+      <article class="award reveal"><div class="place p1">1<sup>º</sup></div><h4>Ideathon Porto de Suape 2024</h4><p>Desafio de inovação portuária.</p><span class="self">Relato pessoal</span></article>
+      <article class="award reveal"><div class="place p1">1<sup>º</sup></div><h4>Ideathon Senac</h4><p>Ideação e pitch em equipe.</p><span class="self">Relato pessoal</span></article>
+      <article class="award reveal"><div class="place p2">2<sup>º</sup></div><h4>CopaEZ 2024 · Ensino Médio</h4><p>Projeto Florescer.</p><span class="self">Relato pessoal</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRAJETÓRIA ===================== -->
+<section class="band" id="trajetoria">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:28px"><p class="eyebrow">Trajetória</p><h2 class="headline">Do hardware<br>ao roadmap.</h2></div>
+    <div class="seg" role="tablist" aria-label="Escolher ano" id="yearSeg">
+      <button role="tab" aria-selected="false" aria-controls="y2023" id="t2023">2023</button>
+      <button role="tab" aria-selected="false" aria-controls="y2024" id="t2024">2024</button>
+      <button role="tab" aria-selected="false" aria-controls="y2025" id="t2025">2025</button>
+      <button role="tab" aria-selected="true" aria-controls="y2026" id="t2026">2026</button>
+    </div>
+    <div class="tl-panels">
+      <div class="tl-panel" role="tabpanel" id="y2023" aria-labelledby="t2023" hidden><div class="tl-year">2023<small>A base técnica</small></div><ul class="tl-list">
+        <li><span class="k">Formação</span><div><strong>Montagem e Manutenção de Computadores</strong><span>Senac Pernambuco</span></div></li>
+        <li><span class="k">Formação</span><div><strong>Gerenciamento de Ameaças Cibernéticas</strong><span>Senac Pernambuco</span></div></li></ul></div>
+      <div class="tl-panel" role="tabpanel" id="y2024" aria-labelledby="t2024" hidden><div class="tl-year">2024<small>Entrada no ecossistema</small></div><ul class="tl-list">
+        <li><span class="k">Prêmio</span><div><strong>1º lugar no NASA Space Apps Recife</strong><span>Florescer avança para a etapa global</span></div></li>
+        <li><span class="k">Prêmio</span><div><strong>Demoday Startup Way, Ideathon Suape e CopaEZ</strong><span>3º, 1º e 2º lugares</span></div></li>
+        <li><span class="k">Trabalho</span><div><strong>Suporte técnico na Secretaria de Administração de PE</strong><span>Desde novembro</span></div></li>
+        <li><span class="k">Formação</span><div><strong>Redes de Computadores e Segurança de Endpoint</strong><span>Senac PE e Cisco</span></div></li></ul></div>
+      <div class="tl-panel" role="tabpanel" id="y2025" aria-labelledby="t2025" hidden><div class="tl-year">2025<small>Produto e palco</small></div><ul class="tl-list">
+        <li><span class="k">Empresa</span><div><strong>Fundação da MangueSoft</strong><span>Product Owner e Scrum Master</span></div></li>
+        <li><span class="k">Prêmio</span><div><strong>1º lugar no HackerCidadão 12.0, em março</strong><span>Arrecifes, Desafio 2, prêmio de R$ 7 mil</span></div></li>
+        <li><span class="k">Prêmio</span><div><strong>3º lugar no Concurso de Dissertações da SAD/PE</strong><span>Premiação em 8 de setembro, no Centro de Convenções</span></div></li>
+        <li><span class="k">Comunidade</span><div><strong>Administração e mentoria no NASA Space Apps Recife</strong><span>CETENE, 3 a 5 de outubro</span></div></li>
+        <li><span class="k">Palco</span><div><strong>REC’n’Play, SNCT Paulista e DevFest Pernambuco</strong><span>Hackathons no setor corporativo e no setor público</span></div></li>
+        <li><span class="k">Formação</span><div><strong>Programação, Network Defense, Startupismo</strong><span>Senac PE, Cisco e Alura</span></div></li></ul></div>
+      <div class="tl-panel" role="tabpanel" id="y2026" aria-labelledby="t2026"><div class="tl-year">2026<small>Novas frentes</small></div><ul class="tl-list">
+        <li><span class="k">Ensino</span><div><strong>Instrutor de Informática no Senac Pernambuco</strong><span>Turma em Vicência</span></div></li>
+        <li><span class="k">Produto</span><div><strong>Product Owner no hackathon EDScript_</strong><span>Esportes da Sorte e Esportes Gaming Brasil</span></div></li>
+        <li><span class="k">Comunidade</span><div><strong>Organização do Build with AI e dos próximos eventos do GDG Recife</strong><span>Destaque no Jornal Digital, em 14 de setembro</span></div></li>
+        <li><span class="k">Palco</span><div><strong>Bits and Charts e OlinTech 2026</strong><span>Recife e Olinda</span></div></li>
+        <li><span class="k">Ideathon</span><div><strong>3º ConSaúde · SUS 5.0</strong><span>9 a 11 de abril, com a EBSERH</span></div></li>
+        <li><span class="k">Produto</span><div><strong>TOKKA Contact e TOKKA Cardápios</strong><span>Em desenvolvimento</span></div></li></ul></div>
+    </div>
+
+    <div class="roles">
+      <div class="role reveal"><h4>Instrutor de Informática</h4><span class="org">Senac Pernambuco</span><span class="when">Atual</span></div>
+      <div class="role reveal"><h4>Fundador, PO e Scrum Master</h4><span class="org">MangueSoft</span><span class="when">Desde 2025</span></div>
+      <div class="role reveal"><h4>Organizador</h4><span class="org">Google Developer Groups Recife</span><span class="when">2026</span></div>
+      <div class="role reveal"><h4>Product Owner e Analista de Inovação</h4><span class="org">Projeto de produto digital · Esportes da Sorte</span><span class="when">2026</span></div>
+      <div class="role reveal"><h4>Suporte Técnico</h4><span class="org">Secretaria de Administração de Pernambuco</span><span class="when">Desde nov 2024</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPETÊNCIAS ===================== -->
+<section class="band alt" id="competencias">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Competências</p><h2 class="headline">Do problema<br>à entrega.</h2></div>
+    <div class="skills">
+      <div class="skill reveal"><h4>Gestão de produto</h4><p>Discovery, roadmap, MVP, backlog, priorização e validação.</p></div>
+      <div class="skill reveal"><h4>Agilidade</h4><p>Scrum, Kanban, Lean, sprints, retrospectivas, WIP e lead time.</p></div>
+      <div class="skill reveal"><h4>Análise de sistemas</h4><p>Requisitos, regras de negócio, casos de uso, fluxos AS-IS e TO-BE.</p></div>
+      <div class="skill reveal"><h4>Produto e UX</h4><p>Personas, jornadas, protótipos, benchmarking e testes com usuários.</p></div>
+      <div class="skill reveal"><h4>Desenvolvimento</h4><p>JavaScript, Python, HTML, CSS, APIs e fundamentos de POO.</p></div>
+      <div class="skill reveal"><h4>Infraestrutura</h4><p>Hardware, redes, TCP/IP, DNS, DHCP, manutenção e suporte.</p></div>
+      <div class="skill reveal"><h4>Dados</h4><p>Modelagem, SQL, PostgreSQL e Supabase.</p></div>
+      <div class="skill reveal"><h4>IA e automação</h4><p>OCR, integração de IA, n8n e prototipação assistida.</p></div>
+      <div class="skill reveal"><h4>Negócios e comunicação</h4><p>Prospecção B2B, propostas, precificação, pitches, aulas e palestras.</p></div>
+    </div>
+    <div class="marquee" aria-label="Ferramentas"><div class="row" id="tools"></div></div>
+  </div>
+</section>
+
+<!-- ===================== FONTES ===================== -->
+<section class="band alt" id="fontes">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Fontes</p><h2 class="headline">Está tudo<br>documentado.</h2><p class="lede">Matérias, resultados oficiais e as publicações originais de cada foto. Os links abrem em uma nova aba.</p></div>
+    <div class="sources-grid">
+      <a class="src-card reveal" href="https://www.pe.senac.br/alunos-do-mediotec-senac-recife-vencem-maratona-de-programacao-da-nasa/" target="_blank" rel="noopener"><span class="pub">Senac Pernambuco · out 2024</span><strong>Alunos do Mediotec Senac Recife vencem maratona de programação da NASA</strong><span class="go">Ler matéria ↗</span></a>
+      <a class="src-card reveal" href="https://www.diariodepernambuco.com.br/noticia/vidaurbana/2024/11/estudantes-do-senac-recife-sao-selecionados-para-etapa-global-da-nasa.html" target="_blank" rel="noopener"><span class="pub">Diario de Pernambuco · nov 2024</span><strong>Estudantes do Senac Recife são selecionados para etapa global da NASA</strong><span class="go">Ler matéria ↗</span></a>
+      <a class="src-card reveal" href="https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/" target="_blank" rel="noopener"><span class="pub">Senac Pernambuco · mar 2025</span><strong>Estudantes do Senac PE conquistam vitórias no Hacker Cidadão 12.0</strong><span class="go">Ler matéria ↗</span></a>
+      <a class="src-card reveal" href="https://www.sad.pe.gov.br/geral/492-geral/23424-divulgado-resultado-do-vii-concurso-de-dissertacao-para-estagiarios-do-poder-executivo-estadual" target="_blank" rel="noopener"><span class="pub">Governo de Pernambuco · 2025</span><strong>Resultado do VII Concurso de Dissertação para Estagiários</strong><span class="go">Ver resultado ↗</span></a>
+      <a class="src-card reveal" href="https://jornaldigital.recife.br/2026/09/14/comunidades-digitais-estudantes-da-residencia-tecnologica-e-embarque-digital-lideram-engajamento-no-porto-digital/" target="_blank" rel="noopener"><span class="pub">Jornal Digital · set 2026</span><strong>Estudantes lideram engajamento das comunidades digitais no Porto Digital</strong><span class="go">Ler matéria ↗</span></a>
+      <a class="src-card reveal" href="https://www.olintech.com.br/palestrantes#cmu8oge410036qe445lrw8noa" target="_blank" rel="noopener"><span class="pub">OlinTech · set 2026</span><strong>Heitor Sette na página oficial de palestrantes</strong><span class="go">Ver meu perfil de palestrante ↗</span></a>
+    </div>
+    <h3 class="src-sub">Publicações no LinkedIn</h3>
+    <div class="sources-grid" id="liSources"></div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="band contact" id="contato">
+  <div class="wrap">
+    <img class="avatar reveal" data-img="perfil" alt="Retrato de Heitor Sette sorrindo.">
+    <h2 class="reveal">Vamos construir<br>algo juntos.</h2>
+    <p class="lede reveal">19 anos, estudante de Análise e Desenvolvimento de Sistemas, em Olinda, Pernambuco. Busco projetos que conectem problemas reais a soluções viáveis.</p>
+    <div class="ctas reveal">
+      <a class="btn" href="https://www.linkedin.com/in/heitorsettecouto/" target="_blank" rel="noopener">Conversar no LinkedIn</a>
+      <a class="btn ghost" href="#projetos">Rever projetos</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sources"><span>Fotos: publicações de Heitor Sette no <a href="https://www.linkedin.com/in/heitorsettecouto/" target="_blank" rel="noopener">LinkedIn</a> e acervo pessoal. As fontes completas estão na seção <a href="#fontes">Fontes</a>.</span></div>
+    <div class="bottom"><span>© 2026 Heitor Sette Couto de Melo. Olinda, Pernambuco.</span><span>Projetos marcados como protótipo ou em desenvolvimento ainda não estão em produção.</span></div>
+  </div>
+</footer>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sheetTitle"><div class="sheet-inner">
+  <button class="close" data-close aria-label="Fechar"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l10 10M12 2L2 12"/></svg></button>
+  <span class="cat eyebrow" id="sheetCat" style="font-size:14px"></span>
+  <h3 id="sheetTitle"></h3><p class="intro" id="sheetIntro"></p>
+  <dl id="sheetBody"></dl>
+</div></dialog>
+
+<dialog class="lb" id="lb" aria-labelledby="lbTitle"><div class="lb-inner" style="position:relative">
+  <button class="close" data-close aria-label="Fechar"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l10 10M12 2L2 12"/></svg></button>
+  <div class="lb-img"><img id="lbImg" alt=""></div>
+  <div class="lb-side"><span class="tag" id="lbTag"></span><h3 id="lbTitle"></h3><span class="date" id="lbDate"></span><p id="lbText"></p><a class="lb-link" id="lbLink" href="#" target="_blank" rel="noopener" hidden></a>
+    <div class="lb-nav"><span class="lb-count" id="lbCount"></span>
+      <button class="round" id="lbPrev" aria-label="Foto anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3L5 8l5 5"/></svg></button>
+      <button class="round" id="lbNext" aria-label="Próxima foto"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg></button>
+    </div></div>
+</div></dialog>
+
+<script>const IMG=new Proxy({},{get:(_,k)=>typeof k==='string'?''+k+'.jpg':undefined});</script>
+<script>
+(()=>{
+const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+$$('[data-img]').forEach(el=>{ if(IMG[el.dataset.img]) el.src=IMG[el.dataset.img]; });
+
+/* Navegação */
+const nav=$('#localnav'), tog=$('#navToggle');
+tog.addEventListener('click',()=>{const o=nav.classList.toggle('open'); tog.setAttribute('aria-expanded',o); tog.setAttribute('aria-label',o?'Ocultar seções':'Mostrar seções');});
+$$('#navLinks a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open'); tog.setAttribute('aria-expanded','false');}));
+const navMap=new Map($$('#navLinks a').map(a=>[a.getAttribute('href').slice(1),a]));
+const secIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ navMap.forEach(a=>a.removeAttribute('aria-current')); const a=navMap.get(e.target.id); if(a) a.setAttribute('aria-current','true'); }}),{rootMargin:'-45% 0px -50% 0px'});
+navMap.forEach((a,id)=>{const s=document.getElementById(id); if(s) secIO.observe(s);});
+
+/* Revelação: só esconde o que está abaixo da primeira tela */
+if(!reduce){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target);} }),{rootMargin:'0px 0px -8% 0px'});
+  $$('.reveal').forEach(el=>{ if(el.getBoundingClientRect().top>innerHeight*.95){ el.classList.add('pre'); io.observe(el);} });
+}
+
+/* Logos ganham cor em sequência ao entrar na tela */
+const logos=$('#logos');
+if(reduce){ logos.classList.add('lit'); }
+else { const lio=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ logos.classList.add('lit'); lio.disconnect(); } },{threshold:.15}); lio.observe(logos); }
+
+/* Contadores */
+const fmt=n=>n.toLocaleString('pt-BR');
+const cio=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; cio.unobserve(e.target); const el=e.target, end=+el.dataset.count; if(reduce) return; const t0=performance.now(), d=1400; const step=t=>{const p=clamp((t-t0)/d); const v=Math.round(end*(1-Math.pow(1-p,3))); el.textContent=fmt(v); if(p<1) requestAnimationFrame(step);}; requestAnimationFrame(step); }),{threshold:.6});
+$$('[data-count]').forEach(el=>{ if(el.getBoundingClientRect().top>innerHeight) cio.observe(el); });
+
+/* ODS */
+const SDG=["Erradicação da pobreza", "Fome zero", "Boa saúde e bem-estar", "Educação de qualidade", "Igualdade de gênero", "Água limpa e saneamento", "Energia acessível e limpa", "Emprego digno e crescimento econômico", "Indústria, inovação e infraestrutura", "Redução das desigualdades", "Cidades e comunidades sustentáveis", "Consumo e produção responsáveis", "Combate às alterações climáticas", "Vida debaixo d’água", "Vida sobre a terra", "Paz, justiça e instituições fortes", "Parcerias em prol das metas"];
+$('#sdg').innerHTML=SDG.map((n,i)=>`<img src="ods-${i+1}.jpg" alt="ODS ${i+1}: ${n}" style="--k:${i}">`).join('')+'<img src="ods-18.jpg" alt="Objetivos de Desenvolvimento Sustentável" style="--k:17">';
+
+/* Rolagem: hero, manifesto, expansão */
+const heroPhoto=$('#heroPhoto'), manif=$('#manifesto'), wordsEl=$('#words');
+const hiWords=(wordsEl.dataset.hi||'').split(' ');
+const parts=wordsEl.textContent.trim().split(/\s+/);
+wordsEl.innerHTML=parts.map(w=>`<span${hiWords.some(h=>h&&w.replace(/[“”.,]/g,'')===h.replace(/[.]/g,''))?' class="hi"':''}>${w}</span>`).join(' ');
+const spans=$$('span',wordsEl);
+const prog=el=>{const r=el.getBoundingClientRect(); return clamp(-r.top/(r.height-innerHeight));};
+let ticking=false;
+const chips=$$('.chip'), stage=$('.hero-stage');
+if(!reduce && matchMedia('(pointer:fine)').matches){
+  stage.addEventListener('pointermove',e=>{ const b=stage.getBoundingClientRect(); const mx=((e.clientX-b.left)/b.width-.5)*2, my=((e.clientY-b.top)/b.height-.5)*2; chips.forEach(c=>{c.style.setProperty('--mx',(-mx*.5).toFixed(3)); c.style.setProperty('--my',(-my*.5).toFixed(3));}); });
+  stage.addEventListener('pointerleave',()=>chips.forEach(c=>{c.style.setProperty('--mx',0); c.style.setProperty('--my',0);}));
+}
+function frame(){
+  ticking=false;
+  if(reduce){ spans.forEach(s=>s.classList.add('lit')); $$('.expand-media').forEach(m=>m.style.setProperty('--p',1)); return; }
+  const r=heroPhoto.getBoundingClientRect();
+  const hp=clamp(1-(r.top-innerHeight*.25)/(innerHeight*.75));
+  heroPhoto.style.setProperty('--s',(0.9+0.1*hp).toFixed(4));
+  if(r.bottom>0){ const sp=Math.max(0,-r.top+innerHeight*.4); chips.forEach(c=>c.style.setProperty('--sp',sp.toFixed(1))); }
+  const mp=prog(manif); const lit=Math.round(mp*1.15*spans.length);
+  spans.forEach((s,i)=>s.classList.toggle('lit',i<lit));
+  $$('.expand').forEach(sec=>{ const r=sec.getBoundingClientRect(); sec.querySelector('.expand-media').style.setProperty('--p',clamp((innerHeight - r.top)/(innerHeight*0.85)).toFixed(4)); });
+}
+addEventListener('scroll',()=>{ if(!ticking){ticking=true; requestAnimationFrame(frame);} },{passive:true});
+addEventListener('resize',frame); frame();
+
+/* Carrossel de destaques */
+const track=$('#hlTrack'), cards=$$('.hl-card',track), dotsWrap=$('#hlDots'), playBtn=$('#hlPlay'), playIcon=$('#hlPlayIcon');
+let idx=0, p=0, playing=!reduce, inView=false, hover=false, last=performance.now();
+const dots=cards.map((c,i)=>{const b=document.createElement('button'); b.className='dot'; b.setAttribute('aria-label',`Destaque ${i+1} de ${cards.length}`); b.innerHTML='<span></span>'; b.addEventListener('click',()=>{go(i); p=0;}); dotsWrap.appendChild(b); return b;});
+const pad=()=>parseFloat(getComputedStyle(track).paddingLeft)||0;
+function setActive(){ dots.forEach((d,i)=>{d.classList.toggle('on',i===idx); d.setAttribute('aria-current',i===idx?'true':'false');}); cards.forEach((c,i)=>c.classList.toggle('active',i===idx)); }
+function go(i){ idx=(i+cards.length)%cards.length; track.scrollTo({left:cards[idx].offsetLeft-pad(), behavior:reduce?'auto':'smooth'}); setActive(); }
+let st; track.addEventListener('scroll',()=>{ clearTimeout(st); st=setTimeout(()=>{ const x=track.scrollLeft+pad(); let best=0,bd=1e9; cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-x); if(d<bd){bd=d;best=i;}}); if(best!==idx){idx=best; p=0; setActive();} },120); },{passive:true});
+['pointerenter','focusin'].forEach(ev=>track.addEventListener(ev,()=>hover=true)); ['pointerleave','focusout'].forEach(ev=>track.addEventListener(ev,()=>hover=false));
+new IntersectionObserver(es=>{inView=es[0].isIntersecting;},{threshold:.4}).observe(track);
+function setPlayUI(){ playBtn.setAttribute('aria-label',playing?'Pausar reprodução automática':'Retomar reprodução automática'); playIcon.innerHTML=playing?'<rect x="3" y="2" width="3.5" height="12" rx="1"/><rect x="9.5" y="2" width="3.5" height="12" rx="1"/>':'<path d="M4 2.5v11a.8.8 0 0 0 1.2.7l9-5.5a.8.8 0 0 0 0-1.4l-9-5.5A.8.8 0 0 0 4 2.5z"/>'; }
+playBtn.addEventListener('click',()=>{playing=!playing; setPlayUI();}); setPlayUI(); setActive();
+
+/* Navegação: setas, paddles, teclado e arrastar com o mouse */
+$('#hlPrev').addEventListener('click',()=>{go(idx-1); p=0;});
+$('#hlNext').addEventListener('click',()=>{go(idx+1); p=0;});
+const wrap=document.createElement('div'); wrap.className='hl-wrap'; track.parentNode.insertBefore(wrap,track); wrap.appendChild(track);
+const mk=(cls,label,d)=>{const b=document.createElement('button'); b.className='paddle '+cls; b.setAttribute('aria-label',label); b.innerHTML=`<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg>`; wrap.appendChild(b); return b;};
+mk('prev','Destaque anterior','M10 3L5 8l5 5').addEventListener('click',()=>{go(idx-1); p=0;});
+mk('next','Próximo destaque','M6 3l5 5-5 5').addEventListener('click',()=>{go(idx+1); p=0;});
+track.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){go(idx+1); p=0; e.preventDefault();} if(e.key==='ArrowLeft'){go(idx-1); p=0; e.preventDefault();} });
+$$('img',track).forEach(i=>i.setAttribute('draggable','false'));
+let drag=null;
+track.addEventListener('pointerdown',e=>{ if(e.pointerType!=='mouse'||e.button!==0) return; drag={x:e.clientX, s:track.scrollLeft, moved:false, id:e.pointerId}; });
+track.addEventListener('pointermove',e=>{ if(!drag) return; const dx=e.clientX-drag.x; if(!drag.moved&&Math.abs(dx)>5){ drag.moved=true; track.classList.add('dragging'); track.setPointerCapture(drag.id);} if(drag.moved) track.scrollLeft=drag.s-dx; });
+const endDrag=e=>{ if(!drag) return; const d=drag; drag=null; if(!d.moved) return; const dx=e.clientX-d.x; track.classList.remove('dragging'); const step=Math.abs(dx)>60?(dx<0?1:-1):0; let best=0,bd=1e9; const x=track.scrollLeft+pad(); cards.forEach((c,i)=>{const dd=Math.abs(c.offsetLeft-x); if(dd<bd){bd=dd;best=i;}}); const target=step&&best===d.idx0?best+step:best; go(Math.max(0,Math.min(cards.length-1, step?(dx<0?Math.max(best,idxAtStart(d)+1):Math.min(best,idxAtStart(d)-1)):best))); p=0; };
+function idxAtStart(d){ let best=0,bd=1e9; const x=d.s+pad(); cards.forEach((c,i)=>{const dd=Math.abs(c.offsetLeft-x); if(dd<bd){bd=dd;best=i;}}); return best; }
+track.addEventListener('pointerup',endDrag); track.addEventListener('pointercancel',endDrag);
+track.addEventListener('click',e=>{ if(track.classList.contains('dragging')) e.preventDefault(); },true);
+function tick(t){ const dt=t-last; last=t; if(playing&&inView&&!hover&&!document.hidden){ p+=dt/6000; if(p>=1){p=0; go(idx+1);} } dots[idx].style.setProperty('--prog',(playing?p*100:100)+'%'); requestAnimationFrame(tick); }
+requestAnimationFrame(tick);
+
+/* Interruptores do cardápio */
+$$('#menu .switch').forEach(sw=>sw.addEventListener('click',()=>{ const on=sw.getAttribute('aria-checked')!=='true'; sw.setAttribute('aria-checked',on); const row=sw.closest('.menu-row'); row.classList.toggle('off',!on); const sm=$('small',row); sm.textContent=sm.textContent.replace(/ · esgotado$/,'')+(on?'':' · esgotado'); }));
+
+/* QR ilustrativo */
+(()=>{ const n=25; let seed=427; const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647; let r='';
+  const finder=(x,y)=>`<rect x="${x}" y="${y}" width="7" height="7" fill="#000"/><rect x="${x+1}" y="${y+1}" width="5" height="5" fill="#fff"/><rect x="${x+2}" y="${y+2}" width="3" height="3" fill="#000"/>`;
+  const inF=(x,y)=>(x<8&&y<8)||(x>n-9&&y<8)||(x<8&&y>n-9);
+  for(let y=0;y<n;y++) for(let x=0;x<n;x++){ if(!inF(x,y)&&rnd()>.52) r+=`<rect x="${x}" y="${y}" width="1" height="1" fill="#000"/>`; }
+  $('#qr').innerHTML=`<svg viewBox="0 0 ${n} ${n}" shape-rendering="crispEdges">${r}${finder(0,0)}${finder(n-7,0)}${finder(0,n-7)}</svg>`; })();
+
+/* Cartão NFC com inclinação */
+if(!reduce && matchMedia('(pointer:fine)').matches){ $$('.tilt').forEach(c=>{ const host=c.closest('.tile'); host.addEventListener('pointermove',e=>{ const b=host.getBoundingClientRect(); const x=(e.clientX-b.left)/b.width-.5, y=(e.clientY-b.top)/b.height-.5; c.style.setProperty('--ry',(x*28)+'deg'); c.style.setProperty('--rx',(-y*20)+'deg'); c.style.setProperty('--sx',(x*120)+'%'); }); host.addEventListener('pointerleave',()=>{ c.style.removeProperty('--ry'); c.style.removeProperty('--rx'); c.style.removeProperty('--sx'); }); }); }
+
+/* Detalhes de projetos */
+const PROJ={
+ arrecifes:{cat:'Civic Tech · 1º lugar no HackerCidadão 12.0, Desafio 2',t:'Arrecifes',i:'Engajamento cidadão no Recife com recompensas digitais.',src:['Matéria do Senac PE','https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/'],d:[['Prêmio','1º lugar no Desafio 02, gamificação no Conecta Recife, com prêmio de R$ 7 mil. Maratona de 11 a 13 de março de 2025.'],['Problema','Pouca participação em programas públicos de saúde, sustentabilidade e bem-estar.'],['Solução','Moedas digitais, as Capibas, dadas por ações como doação de sangue, prevenção em saúde, adoção de animais e vacinação em dia. Integração proposta ao Conecta Recife.'],['Meu papel','Concepção do produto, organização da solução e liderança do desenvolvimento.'],['Estágio','Projeto de hackathon premiado.']]},
+ tokka:{cat:'NFC · Em desenvolvimento',t:'TOKKA Contact',i:'Compartilhamento de contatos por cartão físico NFC e QR Code.',d:[['Solução','Um cartão que abre um perfil digital personalizável ao encostar no celular ou ler o QR Code.'],['Meu papel','Identidade da marca, ativação dos cartões, arquitetura do sistema, segurança, precificação, venda em marketplaces e apresentação comercial.'],['Estágio','Produto em desenvolvimento.']]},
+ cardapios:{cat:'FoodService · Em desenvolvimento',t:'TOKKA Cardápios',i:'Cardápio digital acessível e administrável.',d:[['Solução','Itens, preços e disponibilidade atualizados pelo próprio estabelecimento, com acesso por NFC ou QR Code.'],['Na prática','Cardápio da Barraca do Fábio, em Boa Viagem, Recife: banner de promoções, busca, categorias com fotos e destaques com preços.'],['Recursos','Painel administrativo e estatísticas de pedidos e consumo.'],['Estágio','Produto em desenvolvimento.']]},
+ faturas:{cat:'GovTech · Desafio Banco do Brasil',t:'Gestão de faturas',i:'Centralização e conferência de contas de água e energia de unidades administrativas.',d:[['Solução','OCR e IA extraem os dados das faturas, apontam inconsistências e organizam o fluxo de revisão humana, aprovação e pagamento.'],['Processo','Entrevistas, observação de processos, levantamento de requisitos, fluxogramas AS-IS e TO-BE, personas, desenho de interface e discussões sobre segurança e LGPD.'],['Estágio','Protótipo para desafio.']]},
+ palma:{cat:'HealthTech · Protótipo',t:'Saúde na Palma da Mão',i:'Pré-triagem e direcionamento de pacientes, com foco em acessibilidade.',d:[['Problema','Dificuldade de saber onde e como agendar o atendimento certo.'],['Solução','Fluxo de pré-triagem em que a IA indica o tipo de atendimento. A ferramenta não faz diagnóstico.'],['Processo','Pesquisa com usuários, personas, mapeamento das dificuldades de agendamento e prototipação.'],['Estágio','Protótipo.']]},
+ flash:{cat:'FoodTech · Protótipo',t:'Flash Food',i:'Cantinas escolares sem fila.',d:[['Solução','Pedido antecipado, pagamento digital e retirada por QR Code, com relatórios de vendas para a cantina.'],['Meu papel','Concepção do produto, planejamento de funcionalidades, organização da equipe e prototipação.'],['Estágio','Protótipo.']]},
+ doutor:{cat:'HealthTech · HackaHealth',t:'I.AI Doutor',i:'IA de apoio a profissionais de saúde.',d:[['Solução','Analisa exames, organiza dados clínicos e apresenta resumos e indicadores para o acompanhamento médico.'],['Limite','Apoia a análise profissional e não substitui o diagnóstico médico.'],['Estágio','Conceito de hackathon.']]},
+ chatbot:{cat:'GovTech · HackerCidadão 13',t:'Chatbot de Saúde',i:'Serviços públicos de saúde pelo WhatsApp.',d:[['Solução','Agendamento de consultas, acompanhamento de exames, teleconsultas e apoio ao monitoramento de pacientes com doenças crônicas.'],['Estágio','Conceito de hackathon.']]},
+ facilit:{cat:'EdTech · IA',t:'Facilit.ai',i:'Assistente virtual para professores.',d:[['Solução','Pelo WhatsApp, gera planos de aula, exercícios e provas e organiza conteúdos, com possíveis integrações ao Google Classroom.'],['Contexto','Uma das minhas primeiras participações em hackathons.'],['Estágio','Conceito de hackathon.']]}
+};
+const sheet=$('#sheet');
+$$('[data-project]').forEach(b=>b.addEventListener('click',()=>{ const d=PROJ[b.dataset.project]; $('#sheetCat').textContent=d.cat; $('#sheetTitle').textContent=d.t; $('#sheetIntro').textContent=d.i; $('#sheetBody').innerHTML=d.d.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')+(d.src?`<div><dt>Fonte</dt><dd><a class="srclink" href="${d.src[1]}" target="_blank" rel="noopener">${d.src[0]}</a></dd></div>`:''); sheet.showModal(); }));
+$$('dialog').forEach(dl=>{ dl.addEventListener('click',e=>{ if(e.target===dl||e.target.closest('[data-close]')) dl.close(); }); });
+
+/* Segmented control da trajetória */
+const yb=$$('#yearSeg button');
+yb.forEach(b=>b.addEventListener('click',()=>{ yb.forEach(x=>{x.setAttribute('aria-selected',x===b); document.getElementById(x.getAttribute('aria-controls')).hidden=x!==b;}); }));
+$('#yearSeg').addEventListener('keydown',e=>{ const i=yb.indexOf(document.activeElement); if(i<0) return; if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ const n=yb[(i+(e.key==='ArrowRight'?1:-1)+yb.length)%yb.length]; n.focus(); n.click(); e.preventDefault(); } });
+
+/* Ferramentas */
+const TOOLS=['Figma','FigJam','Miro','Git','GitHub','VS Code','React','FastAPI','Supabase','PostgreSQL','Vercel','Cloudflare','Stripe','n8n','Three.js','Remotion','Canva','Gamma','Google Stitch','Codex'];
+$('#tools').innerHTML=[...TOOLS,...TOOLS].map((t,i)=>`<span${i>=TOOLS.length?' aria-hidden="true"':''}>${t}</span>`).join('');
+
+/* Galeria */
+const EV={
+ senac:{tag:'Carreira',f:'carreira',t:'De aluno a instrutor',d:'Senac Vicência · 2026',x:'Há um tempo eu era aluno no Senac, aprendendo redes de computadores, montagem e manutenção de máquinas e programação. Hoje estou do outro lado da sala, como instrutor, ensinando informática para uma nova turma. A instituição me formou tecnicamente e abriu espaço para eu crescer e contribuir de volta.'},
+ bwai:{tag:'Comunidade',f:'comunidade',t:'Build with AI · GDG Recife',d:'2026',x:'Na organização do evento, conectei equipes, organizei fluxos, dei suporte direto a voluntários e palestrantes e participei da gestão do design final. Com a equipe da MangueSoft, acompanhei prazos e entregas de posts, banners e stickers. No meio da correria, recebi o convite para organizar os próximos eventos do GDG Recife.'},
+ po:{tag:'Carreira',f:'carreira',t:'Product Owner · Esportes da Sorte',d:'2026',x:'Liderei a definição, validação e evolução de soluções para o produto, com análise comportamental dos usuários, benchmarking, discovery orientado a problema, backlog priorizado por impacto e risco e protótipos validados. Um objetivo estratégico foi tornar a experiência mais leve, gamificada e centrada em entretenimento.'},
+ eds:{tag:'Hackathon',f:'hackathon',t:'Hackathon EDScript_',d:'2026 · Esportes da Sorte e Esportes Gaming Brasil',x:'Atuei como Product Owner e Analista de Inovação no desafio de UX: reformulação e rebranding do fluxo de telas do aplicativo e do site da Esportes da Sorte. Time: Gustavo Papini, Cecília de Souza, Carlos Eduardo, Lucas Ximenes e Victor Correia.'},
+ bits:{tag:'Palco',f:'palco',t:'Bits and Charts',d:'23 jan 2026 · Recife',x:'Um bate-papo sobre eventos, dados, comunidades tech e outros assuntos. O evento é feito pela Recife Front-End Community e pela DSE.'},
+ devfest:{tag:'Palco',f:'palco',t:'DevFest Pernambuco 2025',d:'Trilha Frontend · RFEC e GDG Recife',x:'Levamos ao palco uma conversa sobre a importância dos eventos tech na construção de um portfólio autêntico. Destaquei a área de negócios do REC’n’Play como espaço para validar projetos, falei da Campus Party e compartilhei dicas práticas para aproveitar ambientes de inovação.'},
+ snct:{tag:'Palco',f:'palco',t:'Semana Nacional de Ciência e Tecnologia',d:'24 out 2025 · Paulista',x:'A convite de Ivo Leonardo, e com João Souza e Caio Esdras, fizemos uma roda de conversa sobre hackathons no ambiente público: como aproximam sociedade e governo e o papel das prefeituras em promover inovação. Depois, mediei uma conversa com as startups Evalog e FiveUp.'},
+ rec:{tag:'Palco',f:'palco',t:'REC’n’Play 2025 · CESAR School',d:'17 out 2025 · Sala 205',x:'Falei sobre a importância dos hackathons no ambiente corporativo. Convidei Samuel Locatel e Brenno França como exemplos de quem transformou oportunidade em conquista. Parceria de palco com Gustavo Costa.'},
+ nasa:{tag:'Hackathon',f:'hackathon',t:'NASA Space Apps Recife 2025',d:'3 a 5 out 2025 · CETENE',x:'Participei da administração do evento e mentorei equipes ao longo do desafio, aplicando métricas de desempenho e inovação. Acompanhei de perto a equipe Naipi, que ficou em primeiro lugar, e a E-32, que ficou em segundo.'},
+ sad:{tag:'Carreira',f:'carreira',t:'3º lugar · Concurso de Dissertações SAD/PE',d:'8 set 2025 · Centro de Convenções de Pernambuco',x:'Fui premiado na VII edição do Concurso de Dissertações para Estagiários, nível médio. Tema: “Presença digital e o fenômeno do cancelamento: o perigo dos julgamentos online”. No palco, comigo, Paulo Nunes (supervisor) e Leticia Andrade (coordenadora do estágio).'},
+ nasa24:{tag:'Hackathon',f:'hackathon',t:'1º lugar · NASA Space Apps Recife 2024',d:'Out 2024 · Equipe Fulô de Mandacaru',x:'Com o Florescer, plataforma que leva os Objetivos de Desenvolvimento Sustentável da ONU para projetos práticos nas escolas, a equipe venceu a etapa Recife e foi classificada para a etapa global. Os certificados de reconhecimento foram entregues no Senac, onde a equipe estudava no Mediotec.',src:'https://www.pe.senac.br/alunos-do-mediotec-senac-recife-vencem-maratona-de-programacao-da-nasa/',srcLabel:'Matéria do Senac PE'},
+ arrecifes:{tag:'Hackathon',f:'hackathon',t:'1º lugar · HackerCidadão 12.0',d:'11 a 13 mar 2025 · Desafio 02',x:'O Arrecifes venceu o desafio de gamificação no Conecta Recife: moedas digitais, as Capibas, para quem doa sangue, faz exames preventivos, adota animais e mantém a vacinação em dia. Prêmio de R$ 7 mil.',src:'https://www.pe.senac.br/tecnologia-e-inovacao-estudantes-do-senac-pe-conquistam-vitorias-no-hacker-cidadao-12-0/',srcLabel:'Matéria do Senac PE'},
+ hc:{tag:'Hackathon',f:'hackathon',t:'HackerCidadão',d:'Recife',x:'Com a camisa do HackerCidadão e o bóton do DevFest, durante a maratona de soluções para a cidade.'},
+ olintech:{tag:'Palco',f:'palco',t:'OlinTech 2026',d:'17 a 19 set 2026 · Olinda',x:'Palestrante no festival de inovação territorial, falando sobre como o GDG Recife e o DevFest atuam no ecossistema.',src:'https://www.olintech.com.br/palestrantes#cmu8oge410036qe445lrw8noa',srcLabel:'Página de palestrantes'},
+ golpes:{tag:'Palco',f:'palco',t:'É golpe ou não é?',d:'Porto Digital',x:'Uma dinâmica com balões: o público levanta o verde se acha que a mensagem é confiável e o vermelho se acha que é golpe. Uma forma leve de ensinar segurança digital.'},
+ consaude:{tag:'Hackathon',f:'hackathon',t:'Ideathon · 3º ConSaúde',d:'9 a 11 abr 2026 · SUS 5.0',x:'Participação no ideathon do congresso, cujo tema foi SUS 5.0: conexão e cuidado.'},
+ brain:{tag:'Comunidade',f:'comunidade',t:'Brain Innovation Summit',d:'Evento de inovação',x:'Participação no summit, com conexões entre estudantes, empreendedores e patrocinadores.'},
+ romathoon:{tag:'Hackathon',f:'hackathon',t:'Romathoon · Nova Roma',d:'Hackathon',x:'Participação no hackathon da Nova Roma, ao lado de colegas de outras maratonas.'},
+ recnplay:{tag:'Palco',f:'palco',t:'REC’n’Play',d:'Recife Antigo e Porto Digital',x:'Palestrante no festival de tecnologia e criatividade do Recife, com o mar do Recife Antigo ao fundo.'},
+ rfec:{tag:'Comunidade',f:'comunidade',t:'Comunidade no Porto Digital',d:'Recife',x:'Encontro com um integrante da Recife Front-End Community (RFEC) no Porto Digital.'},
+ turma:{tag:'Carreira',f:'carreira',t:'Encontro com estudantes',d:'Recife',x:'Uma roda de conversa com uma turma de estudantes.'}
+};
+const POST={senac:'7499255190483558401',bwai:'7459553453657243648',po:'7444378956931190784',eds:'7441896654930317312',bits:'7420828886189617152',devfest:'7401207671141568512',snct:'7387816728648388611',rec:'7385280494269198336',nasa:'7384564824833191936',sad:'7371195843036491776'};
+Object.entries(POST).forEach(([k,id])=>{ EV[k].src=`https://www.linkedin.com/feed/update/urn:li:activity:${id}/`; EV[k].srcLabel='Publicação no LinkedIn'; });
+$('#liSources').innerHTML=Object.keys(POST).map(k=>`<a class="src-card" href="${EV[k].src}" target="_blank" rel="noopener"><span class="pub">LinkedIn · ${EV[k].d.split('·')[0].trim()}</span><strong>${EV[k].t}</strong><span class="go">Abrir publicação ↗</span></a>`).join('');
+const PH=[
+ ['olintech','olintech','No galpão do OlinTech, com crachá de palestrante'],
+ ['nasa24-premiacao','nasa24','Equipe com o troféu na premiação'],['nasa24-trofeu','nasa24','O troféu nas mãos da equipe'],['nasa24-equipe','nasa24','Selfie da equipe Fulô de Mandacaru'],['nasa24-mentoria','nasa24','Conversa durante o evento'],['senac-cert-1','nasa24','Certificado de reconhecimento no Senac'],['senac-cert-2','nasa24','Certificado de reconhecimento no Senac'],['senac-cert-3','nasa24','Certificado de reconhecimento no Senac'],
+ ['arrecifes-premio','arrecifes','Equipe Arrecifes com o cheque de 1º lugar'],['hackercidadao-retrato','hc','Com a camisa do HackerCidadão'],
+ ['golpes-palestra','golpes','Explicando as regras da dinâmica'],['golpes-publico','golpes','Público com os balões'],
+ ['consaude-totem','consaude','No totem do 3º ConSaúde'],['consaude-posters','consaude','Entre os pôsteres do congresso'],
+ ['brain-grupo','brain','Com colegas no painel do summit'],['brain-1','brain','No painel do Brain Innovation Summit'],
+ ['romathoon-selfie','romathoon','Selfie da equipe com certificado'],
+ ['recnplay-janela','recnplay','Com crachá de palestrante, diante do mar'],['recnplay-retrato','recnplay','Retrato com crachá do REC’n’Play'],['recnplay-sala205','rec','Na porta da sala 205, antes da palestra'],
+ ['portodigital-rfec','rfec','Com a RFEC no Porto Digital'],['senac-turma','turma','Roda de conversa com estudantes'],
+ ['instrutor','senac','Selfie em sala de aula com a turma do Senac'],
+ ['bwai-retrato','bwai','Retrato no Build with AI'],['bwai-equipe','bwai','Parte da equipe de organização'],['bwai-credenciamento','bwai','Equipe do credenciamento'],['bwai-gdg','bwai','Foto oficial com participantes'],
+ ['eds-laptop','po','Discussão em frente ao notebook'],['eds-mentoria','po','Apresentando o protótipo a mentores'],['eds-anotando','po','Anotando ideias durante o desafio'],['eds-grupo','po','Equipe reunida'],
+ ['eds-banner','eds','Painel do EDScript_'],['eds-cracha','eds','Crachá de participante'],['eds-trofeu','eds','No telão da premiação'],['eds-trio','eds','Com colegas de evento'],['eds-estacao','eds','Estação de trabalho do time'],
+ ['bits-1','bits','Com um amigo no Esquenta'],['bits-2','bits','Com amigos em frente à tela do evento'],['bits-grupo','bits','Foto coletiva'],
+ ['devfest-bandeiras','devfest','Com as bandeiras do GDG Recife e do DevFest'],['devfest-trilha','devfest','Na Trilha Frontend'],['devfest-trio','devfest','Com colegas de palco'],['devfest-grupo','devfest','Foto do grupo na trilha'],['devfest-4','devfest','Com uma amiga no banner do evento'],['devfest-5','devfest','Com um participante da RFEC'],['devfest-selfie','devfest','Selfie de crachá'],
+ ['snct-palco','snct','Roda de conversa no palco'],['snct-roda','snct','Durante a conversa'],['snct-fiveup','snct','Mediação com a startup FiveUp'],['snct-crachas','snct','Os três crachás de palestrante'],
+ ['recnplay-cartaz','rec','Cartaz oficial da palestra'],['recnplay-turma','rec','Público ao final da palestra'],['recnplay-palco','rec','No palco com Gustavo Costa'],['recnplay-fala','rec','Explicando hard e soft skills'],['recnplay-palco2','rec','Conversa com o público'],
+ ['nasa25-grupo','nasa','Participantes do NASA Space Apps Recife 2025'],['nasa25-cetene','nasa','Equipe no CETENE'],['nasa25-salao','nasa','Equipes trabalhando no salão'],['nasa25-selfie','nasa','Com a camisa do evento'],['nasa25-trio','nasa','Com colegas mentores'],
+ ['sad-premio','sad','Recebendo o certificado no palco'],['sad-premio-2','sad','No palco, com o nome no telão']
+];
+const mas=$('#masonry');
+mas.innerHTML=PH.map(([k,e,a],i)=>`<button class="ph" data-i="${i}" data-f="${EV[e].f}" aria-label="${a}. ${EV[e].t}. Ampliar"><img alt="" loading="lazy" decoding="async" src="${IMG[k]}"><span class="cap">${EV[e].t}</span></button>`).join('');
+const tiles=$$('.ph',mas), gcount=$('#gcount'); let visible=tiles;
+function setFilter(f){ visible=[]; tiles.forEach(t=>{ const on=f==='all'||t.dataset.f===f; t.hidden=!on; if(on) visible.push(t); }); gcount.textContent=`${visible.length} fotos`; }
+const fb=$$('#galFilter button');
+fb.forEach(b=>b.addEventListener('click',()=>{ fb.forEach(x=>x.setAttribute('aria-selected',x===b)); setFilter(b.dataset.f); }));
+setFilter('all');
+const lb=$('#lb'); let cur=0;
+function show(n){ cur=(n+visible.length)%visible.length; const i=+visible[cur].dataset.i, [k,e,a]=PH[i], ev=EV[e]; const im=$('#lbImg'); im.src=IMG[k]; im.alt=a; $('#lbTag').textContent=ev.tag; $('#lbTitle').textContent=ev.t; $('#lbDate').textContent=ev.d; $('#lbText').textContent=ev.x; const lk=$('#lbLink'); if(ev.src){ lk.href=ev.src; lk.textContent=(ev.srcLabel||'Fonte')+' ↗'; lk.hidden=false; } else { lk.hidden=true; } $('#lbCount').textContent=`${cur+1} de ${visible.length} · ${a}`; }
+tiles.forEach(t=>t.addEventListener('click',()=>{ show(visible.indexOf(t)); lb.showModal(); }));
+$('#lbPrev').addEventListener('click',()=>show(cur-1)); $('#lbNext').addEventListener('click',()=>show(cur+1));
+lb.addEventListener('keydown',e=>{ if(e.key==='ArrowRight') show(cur+1); if(e.key==='ArrowLeft') show(cur-1); });
+})();
+</script>
+
+</body>
+</html>
